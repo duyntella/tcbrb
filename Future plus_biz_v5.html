@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Techcombank Future+ | Digital Banking Growth Strategy</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Manrope:wght@600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#fff7f7;--paper:#ffffff;--paper-soft:#fffafa;--ink:#1f2937;--muted:#667085;--line:#f0d8da;--accent:#ED1C24;--accent-deep:#B5121B;--accent-bright:#FF4B55;--accent-soft:#fff1f2;--amber:#b7791f;--amber-soft:#fff8eb;--green:#047857;--green-soft:#ecfdf5;--shadow:0 18px 48px rgba(132,20,28,.11);--shadow-soft:0 10px 28px rgba(132,20,28,.07);--radius:24px;--sidebar:320px;--topbar:72px}
+*{box-sizing:border-box;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(circle at 12% -10%,rgba(237,28,36,.13),transparent 32%),radial-gradient(circle at 92% 4%,rgba(255,75,85,.11),transparent 28%),linear-gradient(135deg,#fff 0%,#fff6f7 46%,#fffafa 100%);min-height:100vh;overflow-x:hidden}button{font-family:inherit}.topbar{position:fixed;top:0;left:0;right:0;height:var(--topbar);z-index:80;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 22px;background:rgba(255,255,255,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(237,28,36,.14);box-shadow:0 8px 24px rgba(132,20,28,.06)}.brand-inline{display:flex;align-items:center;gap:13px;min-width:0}.brand-logo{height:42px;max-width:186px;object-fit:contain;background:#fff;border-radius:14px;padding:6px 10px;box-shadow:0 10px 24px rgba(0,0,0,.07);border:1px solid rgba(237,28,36,.14)}.brand-copy{display:flex;flex-direction:column;min-width:0}.brand-title{font-family:Manrope,sans-serif;font-weight:900;letter-spacing:.04em;text-transform:uppercase;color:var(--accent-deep);font-size:14px;white-space:nowrap}.brand-sub{font-size:12px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mobile-menu{display:none;border:0;background:linear-gradient(135deg,var(--accent-deep),var(--accent));color:#fff;border-radius:14px;width:46px;height:46px;align-items:center;justify-content:center;box-shadow:0 12px 26px rgba(237,28,36,.24);cursor:pointer;flex:0 0 46px}.mobile-menu svg{width:24px;height:24px}.app{display:grid;grid-template-columns:var(--sidebar) minmax(0,1fr);min-height:100vh;padding-top:var(--topbar)}.sidebar{position:sticky;top:var(--topbar);height:calc(100vh - var(--topbar));background:rgba(255,255,255,.77);backdrop-filter:blur(18px);border-right:1px solid var(--line);padding:22px 18px;display:flex;flex-direction:column;z-index:50;box-shadow:10px 0 30px rgba(132,20,28,.045)}.nav-head{display:flex;align-items:center;justify-content:space-between;margin:0 6px 12px;color:var(--muted);font-size:11px;font-weight:850;letter-spacing:.16em;text-transform:uppercase}.nav{overflow:auto;padding-right:4px;display:flex;flex-direction:column;gap:7px}.nav button{border:1px solid transparent;background:transparent;color:#536171;border-radius:16px;padding:12px 13px;text-align:left;cursor:pointer;display:flex;align-items:center;gap:12px;font-weight:780;font-size:13px;line-height:1.25;transition:.22s ease;min-height:48px}.nav button:hover{background:#fff1f2;color:var(--ink);transform:translateX(2px)}.nav button.active{background:linear-gradient(135deg,#fff1f2,#fff);border-color:#ffd0d5;color:var(--accent-deep);box-shadow:0 8px 22px rgba(237,28,36,.09)}.nav-num{width:28px;height:28px;display:grid;place-items:center;border-radius:10px;background:#fff1f2;color:var(--accent);font-size:11px;font-weight:950;flex:0 0 28px}.nav button.active .nav-num{background:var(--accent);color:#fff}.main{min-width:0;padding:28px 42px 54px;overflow:visible}.page-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:22px;padding:16px 0 4px}.title-wrap{display:flex;align-items:center;gap:15px;min-width:0}.big-num{font-family:Manrope,sans-serif;font-weight:900;color:transparent;-webkit-text-stroke:1.2px rgba(237,28,36,.23);font-size:54px;line-height:.9;letter-spacing:-.04em;flex:0 0 auto}h1{font-family:Manrope,sans-serif;font-size:clamp(25px,3vw,36px);letter-spacing:-.035em;line-height:1.12;margin:0;color:#172033}.section-sub{font-size:14px;color:var(--muted);max-width:760px;line-height:1.6;margin:8px 0 0}.content{display:none;overflow:visible}.content.active{display:block;animation:fade .24s ease both}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:18px;max-width:1420px;width:100%;margin-bottom:18px}.card{background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow-soft);transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;min-width:0;height:fit-content}.card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:rgba(237,28,36,.25)}.span-12{grid-column:span 12}.span-8{grid-column:span 8}.span-7{grid-column:span 7}.span-6{grid-column:span 6}.span-5{grid-column:span 5}.span-4{grid-column:span 4}.span-3{grid-column:span 3}.card-title{font-family:Manrope,sans-serif;font-size:13px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin:0 0 14px;display:flex;align-items:center;gap:9px}.body,.desc{font-size:14.5px;line-height:1.68;color:#4d5f72;margin:0 0 12px;word-wrap:break-word}.desc:last-child,.body:last-child{margin-bottom:0}.lead{font-size:17px;line-height:1.58;color:#33465a;margin:0}.quote{font-family:Manrope,sans-serif;font-size:20px;line-height:1.34;letter-spacing:-.018em;font-weight:850;margin:0;color:#122337}.quote.small{font-size:17px;font-weight:800}.hero-card{max-width:1420px;margin:0 0 20px;padding:28px;border-radius:30px;background:linear-gradient(135deg,var(--accent-deep),var(--accent));color:#fff;box-shadow:0 24px 60px rgba(237,28,36,.20);position:relative;overflow:hidden}.hero-card:after{content:"";position:absolute;right:-80px;top:-90px;width:260px;height:260px;border-radius:999px;background:rgba(255,255,255,.13)}.hero-kicker{font-size:12px;text-transform:uppercase;letter-spacing:.16em;font-weight:950;opacity:.82;margin-bottom:10px}.hero-card h2{font-family:Manrope,sans-serif;font-size:clamp(26px,4vw,46px);line-height:1.04;letter-spacing:-.05em;margin:0;max-width:980px}.hero-card p{font-size:17px;line-height:1.58;max-width:860px;margin:14px 0 0;color:rgba(255,255,255,.86)}.section-line{max-width:1420px;margin:26px 0 14px;display:flex;align-items:center;gap:12px;font-family:Manrope,sans-serif;font-weight:950;color:var(--accent-deep);letter-spacing:-.01em}.section-line:after{content:"";height:1px;background:linear-gradient(90deg,rgba(237,28,36,.35),transparent);flex:1}.section-line span{font-size:16px}.wedge-card{background:linear-gradient(135deg,#fff1f2,#fff)}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:950;color:var(--muted);margin-bottom:8px}.wedge-card h3{font-family:Manrope,sans-serif;font-size:23px;line-height:1.2;margin:0 0 10px;color:var(--accent-deep);letter-spacing:-.025em}.wedge-card p{margin:0;color:#4d5f72;line-height:1.62}.insight-card.profile{background:linear-gradient(135deg,#fff,#fff7f7)}.insight-card.pain-f{background:linear-gradient(135deg,#fff8eb,#fff)}.insight-card.pain-e{background:linear-gradient(135deg,#fff1f2,#fff)}.insight-card.cvp{background:linear-gradient(135deg,var(--accent-deep),var(--accent));border:0;color:#fff}.insight-card.cvp .card-title,.insight-card.cvp .quote{color:#fff}.insight-card.entry{background:linear-gradient(135deg,#fff,#fff1f2)}.tail-card{background:rgba(255,255,255,.95)}.chip-wrap{display:flex;flex-wrap:wrap;gap:8px}.tag{display:inline-flex;padding:7px 11px;background:#fff1f2;border:1px solid #ffd0d5;border-radius:999px;font-size:12.5px;font-weight:800;color:var(--accent-deep);line-height:1.25}.table-wrap{width:100%;overflow-x:auto;border-radius:20px;max-width:1420px;margin-bottom:18px;box-shadow:var(--shadow-soft)}table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border:1px solid var(--line);border-radius:20px;background:#fff;table-layout:auto}th,td{padding:13px 14px;text-align:left;border-bottom:1px solid var(--line);font-size:14px;line-height:1.5;vertical-align:top;color:#3e5165}th{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);background:#fff7f7;font-weight:950;white-space:nowrap}tr:last-child td{border-bottom:0}td strong{color:#13263b}.journey-table td:nth-child(1),.journey-table td:nth-child(2){white-space:nowrap}.wide-table table{min-width:980px}.overlay{display:none}.footer-note{max-width:1420px;margin:26px 0 0;color:var(--muted);font-size:12.5px;text-align:right}
+
+/* Clean segment pitch upgrades */
+.segment-snapshot{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:14px;max-width:1420px;margin-bottom:18px}
+.snapshot-card{background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:22px;padding:18px 18px 17px;box-shadow:var(--shadow-soft);min-width:0}
+.snapshot-card.dark{background:linear-gradient(135deg,var(--accent-deep),var(--accent));border:0;color:#fff;box-shadow:0 18px 42px rgba(237,28,36,.18)}
+.snapshot-card .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:950;color:var(--accent);margin-bottom:8px}
+.snapshot-card.dark .kicker{color:rgba(255,255,255,.78)}
+.snapshot-card h3{font-family:Manrope,sans-serif;font-size:18px;line-height:1.24;letter-spacing:-.025em;margin:0 0 8px;color:#172033}
+.snapshot-card.dark h3{color:#fff}
+.snapshot-card p{margin:0;color:#4d5f72;font-size:14px;line-height:1.55}
+.snapshot-card.dark p{color:rgba(255,255,255,.86)}
+.snapshot-card .mini-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.snapshot-card .mini-tags span{display:inline-flex;padding:6px 9px;border-radius:999px;background:#fff1f2;border:1px solid #ffd0d5;color:var(--accent-deep);font-size:12px;font-weight:850}
+.segment-hero .hero-kicker{display:inline-flex;width:max-content;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.18);padding:7px 10px;border-radius:999px;margin-bottom:13px}
+.segment-hero h2{max-width:1040px}.segment-hero p{font-size:18px;font-weight:650;max-width:980px}
+.flow-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;max-width:1420px;margin-bottom:20px}
+.flow-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:22px;padding:17px 16px 16px;box-shadow:var(--shadow-soft);min-height:160px;display:flex;flex-direction:column;gap:8px;overflow:hidden}
+.flow-card:before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:linear-gradient(90deg,var(--accent-deep),var(--accent-bright))}
+.flow-card:not(:nth-child(4n)):after{content:"→";position:absolute;right:-12px;top:50%;transform:translateY(-50%);z-index:2;width:26px;height:26px;border-radius:999px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:950;box-shadow:0 8px 20px rgba(237,28,36,.22)}
+.flow-stage{display:inline-flex;width:max-content;align-items:center;justify-content:center;padding:5px 9px;border-radius:999px;background:#fff1f2;color:var(--accent-deep);font-family:Manrope,sans-serif;font-weight:950;font-size:12px;border:1px solid #ffd0d5}
+.flow-card h4{font-family:Manrope,sans-serif;font-size:16px;line-height:1.22;margin:0;color:#172033;letter-spacing:-.015em}
+.flow-card p{margin:0;color:#516174;font-size:13.4px;line-height:1.45}.flow-card .flow-product{margin-top:auto;color:var(--accent-deep);font-weight:850;font-size:12.7px}.flow-card .flow-wow{color:#8b3a00;background:#fff8eb;border:1px solid #ffe3b0;border-radius:13px;padding:8px 9px;font-size:12.5px;line-height:1.35}
+.clean-note{max-width:1420px;margin:-4px 0 18px;background:linear-gradient(135deg,#fff1f2,#fff);border:1px dashed #ffc4cb;border-radius:20px;padding:14px 16px;color:#4d5f72;font-size:14px;line-height:1.55}
+.clean-note strong{color:var(--accent-deep)}
+
+/* Clean focus layout for tabs 07-10 */
+.focus-hero{max-width:1420px;margin:0 0 18px;padding:24px;border-radius:30px;background:linear-gradient(135deg,var(--accent-deep),var(--accent));color:#fff;box-shadow:0 24px 60px rgba(237,28,36,.18);position:relative;overflow:hidden}
+.focus-hero:after{content:"";position:absolute;right:-80px;top:-80px;width:250px;height:250px;border-radius:999px;background:rgba(255,255,255,.12)}
+.focus-hero .hero-kicker{margin-bottom:8px}.focus-hero h2{font-family:Manrope,sans-serif;font-size:clamp(25px,3.4vw,40px);line-height:1.08;letter-spacing:-.04em;margin:0;max-width:960px}.focus-hero p{margin:12px 0 0;color:rgba(255,255,255,.86);font-size:15.5px;line-height:1.55;max-width:860px}
+.focus-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px;max-width:1420px;width:100%;margin-bottom:18px}.focus-card{grid-column:span 4;background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--shadow-soft);min-width:0}.focus-card.wide{grid-column:span 6}.focus-card.full{grid-column:span 12}.focus-card:hover{transform:translateY(-1px);box-shadow:var(--shadow)}.focus-title{font-family:Manrope,sans-serif;font-size:16px;line-height:1.25;font-weight:900;letter-spacing:-.015em;color:#172033;margin:0 0 10px}.focus-title.accent{color:var(--accent-deep)}.focus-line{font-size:13.5px;line-height:1.5;color:#536171;margin:0 0 9px}.focus-line:last-child{margin-bottom:0}.mini-label{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:950;margin-bottom:3px}.focus-chip-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.focus-chip{display:inline-flex;align-items:center;border-radius:999px;background:#fff1f2;border:1px solid #ffd0d5;color:var(--accent-deep);font-size:12px;line-height:1.2;font-weight:800;padding:6px 9px}.focus-chip.neutral{background:#f8fafc;border-color:#e5e7eb;color:#475569}.focus-kpi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}.focus-kpi div{background:#fff7f7;border:1px solid #ffd0d5;border-radius:16px;padding:12px}.focus-kpi span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:950;margin-bottom:4px}.focus-kpi b{font-family:Manrope,sans-serif;font-size:18px;color:var(--accent-deep)}
+.clean-flow{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px;max-width:1420px;margin-bottom:18px}.clean-step{position:relative;background:white;border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow-soft);min-height:118px}.clean-step:not(:last-child):after{content:"→";position:absolute;right:-10px;top:46%;font-weight:950;color:var(--accent);background:#fff7f7;border:1px solid #ffd0d5;border-radius:999px;padding:1px 6px;z-index:2}.step-num{width:28px;height:28px;border-radius:10px;background:var(--accent);color:#fff;display:grid;place-items:center;font-family:Manrope,sans-serif;font-weight:950;font-size:12px;margin-bottom:8px}.clean-step h4{margin:0 0 6px;font-family:Manrope,sans-serif;font-size:14px;line-height:1.25;color:#172033}.clean-step p{margin:0;color:#536171;font-size:12.6px;line-height:1.42}.playbook-row{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:10px;margin-top:10px}.playbook-row div{background:#fffafa;border:1px solid #f0d8da;border-radius:15px;padding:10px}.playbook-row span{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:950;margin-bottom:3px}.playbook-row p{margin:0;font-size:12.8px;line-height:1.4;color:#475569}.section-intro{max-width:1420px;margin:-4px 0 14px;color:#536171;font-size:14.5px;line-height:1.6}.clean-section-line{max-width:1420px;margin:24px 0 12px;display:flex;align-items:center;gap:10px}.clean-section-line span{font-family:Manrope,sans-serif;font-weight:950;color:var(--accent-deep);font-size:15px;letter-spacing:-.01em}.clean-section-line:after{content:"";height:1px;background:linear-gradient(90deg,rgba(237,28,36,.28),transparent);flex:1}
+@media(max-width:1120px){.focus-card,.focus-card.wide{grid-column:span 6}.clean-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.clean-step:not(:last-child):after{display:none}.focus-kpi{grid-template-columns:1fr}.playbook-row{grid-template-columns:1fr}}
+@media(max-width:640px){.focus-hero{padding:21px 17px;border-radius:24px}.focus-hero p{font-size:14.5px}.focus-grid{gap:12px;margin-bottom:12px}.focus-card,.focus-card.wide,.focus-card.full{grid-column:span 12;padding:16px;border-radius:20px}.clean-flow{grid-template-columns:1fr;gap:10px}.clean-step{min-height:auto}.focus-title{font-size:15.5px}.focus-line{font-size:13px}.clean-section-line span{font-size:14px}}
+
+@media(max-width:1120px){.segment-snapshot{grid-template-columns:1fr}.flow-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.flow-card:not(:nth-child(4n)):after{display:none}}
+@media(max-width:640px){.segment-snapshot{gap:10px;margin-bottom:12px}.snapshot-card{padding:15px;border-radius:18px}.snapshot-card h3{font-size:16.5px}.flow-grid{grid-template-columns:1fr;gap:10px}.flow-card{min-height:auto;border-radius:18px;padding:15px}.segment-hero p{font-size:15.5px}.clean-note{font-size:13.2px;border-radius:17px}}
+
+
+/* Pitch-clean v2: segment tabs */
+.segment-hero.compact-cvp{padding:22px 24px;border-radius:26px;margin-bottom:16px;background:linear-gradient(135deg,var(--accent-deep),var(--accent));}
+.segment-hero.compact-cvp h2{display:none}
+.segment-hero.compact-cvp .hero-kicker{margin-bottom:8px;font-size:11px;letter-spacing:.14em;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.22);}
+.segment-hero.compact-cvp p{font-size:clamp(16px,1.9vw,22px);line-height:1.42;font-weight:800;letter-spacing:-.018em;margin-top:6px;max-width:1080px;color:#fff;}
+.segment-core{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;max-width:1420px;margin:0 0 16px;}
+.pain-stack{display:grid;grid-template-columns:1fr 1fr;gap:14px;min-width:0;}
+.pitch-card{background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--shadow-soft);min-width:0;}
+.pitch-card .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:950;color:var(--accent);margin-bottom:8px;}
+.pitch-card h3{font-family:Manrope,sans-serif;font-size:17px;line-height:1.28;letter-spacing:-.018em;margin:0;color:#172033;}
+.pitch-card p{font-size:13.8px;line-height:1.52;color:#4d5f72;margin:8px 0 0;}
+.pitch-card.functional{background:linear-gradient(135deg,#fff8eb,#fff)}
+.pitch-card.emotional{background:linear-gradient(135deg,#fff1f2,#fff)}
+.pitch-card.offerings{background:linear-gradient(135deg,#fff,#fff7f7)}
+.pitch-card.offerings .mini-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:2px}
+.pitch-card.offerings .mini-tags span{display:inline-flex;padding:7px 10px;border-radius:999px;background:#fff1f2;border:1px solid #ffd0d5;color:var(--accent-deep);font-size:12.2px;font-weight:850;line-height:1.15;}
+.entry-moment{max-width:1420px;margin:0 0 18px;background:linear-gradient(135deg,#1f2937,#3f1116);color:#fff;border:0;border-radius:24px;padding:18px 20px;box-shadow:0 18px 42px rgba(31,41,55,.16);}
+.entry-moment .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.13em;font-weight:950;color:rgba(255,255,255,.72);margin-bottom:6px;}
+.entry-moment h3{font-family:Manrope,sans-serif;font-size:18px;line-height:1.26;margin:0;color:#fff;letter-spacing:-.018em;}
+.entry-moment p{margin:8px 0 0;color:rgba(255,255,255,.78);font-size:13.8px;line-height:1.5;}
+/* Compact tables for tabs 7-10 */
+.compact-key-table{box-shadow:var(--shadow-soft);}
+.compact-key-table table{font-size:13px;}
+.compact-key-table th{font-size:10.5px;padding:11px 12px;white-space:normal;}
+.compact-key-table td{font-size:13px;line-height:1.38;padding:11px 12px;}
+.kw-cell{display:flex;flex-wrap:wrap;gap:5px;align-items:flex-start;}
+.kw-pill{display:inline-flex;max-width:100%;padding:4px 7px;border-radius:999px;background:#fff1f2;border:1px solid #ffd0d5;color:var(--accent-deep);font-size:11.6px;font-weight:780;line-height:1.2;}
+.kw-text{font-weight:760;color:#334155;}
+@media(max-width:1120px){.segment-core{grid-template-columns:1fr}.pain-stack{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.segment-hero.compact-cvp{padding:18px;border-radius:22px}.segment-hero.compact-cvp p{font-size:16.5px}.pain-stack{grid-template-columns:1fr;gap:10px}.segment-core{gap:10px;margin-bottom:12px}.pitch-card{padding:15px;border-radius:18px}.pitch-card h3{font-size:15.8px}.entry-moment{padding:16px;border-radius:20px}.entry-moment h3{font-size:16.2px}.compact-key-table td{font-size:12.8px}.kw-pill{font-size:11.2px}}
+
+@media(max-width:1120px){.app{grid-template-columns:1fr}.mobile-menu{display:flex}.sidebar{position:fixed;left:0;top:var(--topbar);bottom:0;transform:translateX(-104%);width:min(88vw,340px);height:calc(100dvh - var(--topbar));transition:transform .28s ease;box-shadow:24px 0 80px rgba(0,0,0,.16)}.sidebar.open{transform:translateX(0)}.overlay{display:none;position:fixed;inset:var(--topbar) 0 0;background:rgba(45,8,12,.34);backdrop-filter:blur(2px);z-index:40}.overlay.open{display:block}.main{padding:18px 18px 44px}.page-head{margin-bottom:16px}.big-num{font-size:44px}.span-8,.span-7,.span-6,.span-5,.span-4,.span-3{grid-column:span 12}.topbar{padding:0 14px}.brand-logo{height:38px;max-width:168px}}
+@media(max-width:640px){:root{--topbar:66px}.topbar{gap:9px}.brand-title{font-size:12.5px}.brand-sub{display:none}.brand-logo{height:36px;max-width:152px;padding:6px 8px}.main{padding:14px 12px 34px}.grid{gap:12px;margin-bottom:12px}.card{padding:17px;border-radius:20px}.quote{font-size:18px}.quote.small{font-size:16px}.lead{font-size:15.5px}.hero-card{padding:22px 18px;border-radius:24px}.hero-card p{font-size:15px}table,thead,tbody,tr,th,td{display:block;width:100%}thead{display:none}table{border-radius:18px}tr{border-bottom:1px solid var(--line);padding:8px 0}tr:last-child{border-bottom:0}td{border:0;padding:8px 14px}td:before{content:attr(data-label);display:block;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:950;margin-bottom:3px}.wide-table table{min-width:0}.title-wrap{gap:10px}.big-num{font-size:38px}.mobile-menu{width:44px;height:44px}.nav button{font-size:12.5px}.section-line span{font-size:14.5px}}
+
+/* v3 clean overview + table simplification */
+.overview-stack{display:grid;gap:14px}.focus-card{background:linear-gradient(135deg,#fff1f2,#fff);border-color:#ffd0d5}.focus-card .quote{font-size:18px}.mini-flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.mini-flow .flow-step{padding:16px 14px;border-radius:20px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-soft);position:relative;min-height:118px}.mini-flow .flow-step:not(:last-child):after{content:"→";position:absolute;right:-13px;top:42%;font-weight:950;color:var(--accent);background:#fff7f7;border:1px solid #ffd0d5;border-radius:999px;padding:2px 7px}.mini-flow .flow-kicker{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:950;margin-bottom:7px}.mini-flow .flow-title{font-family:Manrope,sans-serif;color:var(--accent-deep);font-weight:900;margin-bottom:6px}.mini-flow .flow-desc{font-size:13.2px;color:#536171;line-height:1.45}.clean-table tbody td,.clean-table tbody td *{font-weight:400!important}.clean-table td{font-size:13.4px;line-height:1.42}.clean-table .plain-cell{display:block;color:#425568}.clean-table th{font-size:11px}.overview-table td{font-size:13.6px}.overview-table td:first-child{color:var(--accent-deep);font-weight:700!important}
+@media(max-width:1120px){.mini-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.mini-flow .flow-step:not(:last-child):after{display:none}}
+@media(max-width:640px){.mini-flow{grid-template-columns:1fr}.mini-flow .flow-step{min-height:auto}.clean-table td{font-size:13.2px}}
+</style>
+</head>
+<body>
+<div class="topbar">
+<div class="brand-inline">
+<button aria-label="Open menu" class="mobile-menu" id="menuBtn"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.4" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+<img alt="Techcombank Logo" class="brand-logo" src="https://diendantructuyen.com/wp-content/uploads/2025/08/logo-techcombank-vector-3.jpg"/>
+<div class="brand-copy"><div class="brand-title">Techcombank Future+</div><div class="brand-sub">Digital Banking Growth Strategy | Young Affluent Segments</div></div>
+</div>
+</div>
+<div class="overlay" id="overlay"></div>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+<div class="nav-head"><span>10 Strategic Tabs</span></div>
+<nav class="nav" id="nav"><button class="nav-btn active" data-tab="tab0"><span class="nav-num">01</span><span>Strategy</span></button><button class="nav-btn" data-tab="tab1"><span class="nav-num">02</span><span>Young Office Professional</span></button><button class="nav-btn" data-tab="tab2"><span class="nav-num">03</span><span>Young Traveller</span></button><button class="nav-btn" data-tab="tab3"><span class="nav-num">04</span><span>Emerging Investor</span></button><button class="nav-btn" data-tab="tab4"><span class="nav-num">05</span><span>Family Builder</span></button><button class="nav-btn" data-tab="tab5"><span class="nav-num">06</span><span>Young Business Owners</span></button><button class="nav-btn" data-tab="tab6"><span class="nav-num">07</span><span>Current Customers</span></button><button class="nav-btn" data-tab="tab7"><span class="nav-num">08</span><span>Đối tác trọng yếu</span></button><button class="nav-btn" data-tab="tab8"><span class="nav-num">09</span><span>Campaigns</span></button><button class="nav-btn" data-tab="tab9"><span class="nav-num">10</span><span>FOMO Creation</span></button></nav>
+</aside>
+<main class="main">
+<section class="content active" id="tab0"><div class="page-head"><div class="title-wrap"><div class="big-num">01</div><div><h1>Strategy</h1><p class="section-sub">Chiến lược tổng quan</p></div></div></div>
+<div class="hero-card">
+<div class="hero-kicker">Techcombank Future+</div>
+<h2>tăng trưởng khách hàng trẻ thu nhập tốt bằng các “money moments” có khả năng tạo wow và fomo</h2>
+<p>Tập trung 2 mũi khoan: payroll-led acquisition để kéo khách hàng mới, và AI next best action để tăng active, CASA, card spend, AUM trên tệp hiện hữu.</p>
+</div>
+<div class="grid">
+<div class="card span-6 focus-card"><p class="card-title">mũi khoan 1</p><p class="quote small">tier salary banking</p><p class="desc">biến tài khoản lương thành phúc lợi tài chính cá nhân: smart split, saving pocket, thẻ pre-approved, tier benefit.</p></div>
+<div class="card span-6 focus-card"><p class="card-title">mũi khoan 2</p><p class="quote small">travel group wallet</p><p class="desc">dùng travel, chia tiền nhóm và số dư sinh lời để tạo wow, referral tự nhiên và FOMO trong nhóm bạn/người thân.</p></div>
+</div>
+<div class="section-line"><span>5 money moments trọng tâm</span></div>
+<div class="mini-flow">
+<div class="flow-step"><div class="flow-kicker">01</div><div class="flow-title">nhận lương</div><div class="flow-desc">smart split, giữ dòng tiền, tăng CASA.</div></div>
+<div class="flow-step"><div class="flow-kicker">02</div><div class="flow-title">đi du lịch</div><div class="flow-desc">travel wallet, FX card, chia tiền nhóm.</div></div>
+<div class="flow-step"><div class="flow-kicker">03</div><div class="flow-title">tiền nhàn rỗi</div><div class="flow-desc">idle money radar, deposit/fund starter.</div></div>
+<div class="flow-step"><div class="flow-kicker">04</div><div class="flow-title">mua nhà/gia đình</div><div class="flow-desc">mortgage readiness, family finance cockpit.</div></div>
+<div class="flow-step"><div class="flow-kicker">05</div><div class="flow-title">nhóm bạn</div><div class="flow-desc">referral, group challenge, shared goal.</div></div>
+</div>
+<div class="section-line"><span>logic tăng trưởng</span></div>
+<div class="table-wrap"><table class="overview-table"><thead><tr><th>engine</th><th>mục tiêu</th><th>cách kích hoạt</th><th>kpi chính</th></tr></thead><tbody>
+<tr><td data-label="engine">acquire</td><td data-label="mục tiêu">khách hàng mới đúng tệp</td><td data-label="cách kích hoạt">payroll, onboarding doanh nghiệp, tier salary</td><td data-label="kpi chính">new-to-bank, active 30 ngày, CASA</td></tr>
+<tr><td data-label="engine">monetize</td><td data-label="mục tiêu">tăng ARPU trên tệp hiện hữu</td><td data-label="cách kích hoạt">AI next best action, nudges cá nhân hóa</td><td data-label="kpi chính">MAU, sản phẩm thứ 2/3, card spend, AUM</td></tr>
+</tbody></table></div>
+<div class="grid"><div class="card span-12 dark-card"><p class="card-title">north star</p><p class="quote small">mỗi khách hàng chỉ nhận 1–2 gợi ý đúng thời điểm, đúng nhu cầu, đủ tạo cảm giác “ngân hàng hiểu mình”.</p></div></div>
+</section><section class="content" id="tab1"><div class="page-head"><div class="title-wrap"><div class="big-num">02</div><div><h1>Young Office Professional</h1><p class="section-sub">25–35 tuổi | Thu nhập 30–70 triệu/tháng | Dân văn phòng thu nhập tốt, bắt đầu nghĩ tới tích lũy và tài sản.</p></div></div></div><div class="hero-card segment-hero compact-cvp">
+<div class="hero-kicker">CVP</div>
+<p>Lương về không chỉ để chi tiêu. Lương về là điểm bắt đầu của một kế hoạch tài chính thông minh hơn.</p>
+</div><div class="segment-core">
+<div class="pain-stack">
+<div class="pitch-card functional">
+<div class="kicker">Functional Pain</div>
+<h3>Lương tốt nhưng tiền trôi nhanh; thiếu hệ thống chia lương, kiểm soát chi tiêu và mục tiêu tài chính.</h3>
+</div>
+<div class="pitch-card emotional">
+<div class="kicker">Emotional Pain</div>
+<h3>Sợ “kiếm được nhưng không giàu lên”; muốn thấy mình trưởng thành hơn về tài chính.</h3>
+</div>
+</div>
+<div class="pitch-card offerings">
+<div class="kicker">Offerings</div>
+<div class="mini-tags"><span>Tier Salary Account</span><span>Smart Salary Split</span><span>Salary Insight</span><span>Pre-approved Card</span><span>Saving Pocket</span></div>
+</div>
+</div><div class="entry-moment">
+<div class="kicker">Entry Moment</div>
+<h3>Payroll D0: lương vừa về — kích hoạt Smart Split ngay khi nhu cầu kiểm soát tiền mạnh nhất.</h3>
+<p>Nhảy vào đúng khoảnh khắc nhu cầu bộc lộ mạnh nhất: tạo wow trước, sau đó kích hoạt FOMO/referral tự nhiên.</p>
+</div><div class="section-line"><span>Hành trình kích hoạt — nhảy vào đúng moment, tạo đúng cảm xúc</span></div><div class="clean-note"><strong>Flow kích hoạt:</strong> mỗi bước chỉ giữ 1 thông điệp chính, 1 sản phẩm kích hoạt và 1 wow/FOMO để đội bán hàng dễ pitch và đội sản phẩm dễ triển khai.</div><div class="flow-grid">
+<div class="flow-card">
+<div class="flow-stage">D0</div>
+<h4>Welcome</h4>
+<p>Chào mừng đến Tier Salary Banking → Kích hoạt app</p>
+<div class="flow-wow">Wow: Cảm giác an tâm + thuộc nhóm Tier</div>
+<div class="flow-product">Tài khoản</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">D1</div>
+<h4>Smart Split</h4>
+<p>Tự động chia lương: Chi tiêu / Tiết kiệm / Đầu tư / Du lịch</p>
+<div class="flow-wow">Wow: 'Mình quản lý tiền thông minh'</div>
+<div class="flow-product">Saving Pocket</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">D7</div>
+<h4>Spending Pulse</h4>
+<p>Báo cáo chi tiêu 7 ngày đầu</p>
+<div class="flow-wow">Insight cá nhân hóa</div>
+<div class="flow-product">Quản lý tài chính cá nhân</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">D14</div>
+<h4>Card Pre-approved</h4>
+<p>Hạn mức thẻ dự kiến X triệu — mở ngay trong 2 phút</p>
+<div class="flow-wow">Emotional: Được công nhận năng lực tài chính</div>
+<div class="flow-product">Thẻ tín dụng</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">D30</div>
+<h4>Monthly Recap</h4>
+<p>Tháng đầu giữ lại 18% thu nhập → 12 tháng = X triệu</p>
+<div class="flow-wow">WOW moment chính — trigger share</div>
+<div class="flow-product">Quản lý tài chính cá nhân + Saving</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">D45</div>
+<h4>Goal Suggestion</h4>
+<p>Mua nhà/du lịch/quỹ dự phòng phù hợp thu nhập bạn</p>
+<div class="flow-wow">Có tương lai rõ hơn</div>
+<div class="flow-product">Saving Goal</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">D60</div>
+<h4>Cash Nudge</h4>
+<p>X triệu tiền nhàn rỗi — tối ưu ngay</p>
+<div class="flow-wow">Sợ bỏ lỡ cơ hội</div>
+<div class="flow-product">Deposit/Fund</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">D90</div>
+<h4>Tier Upgrade</h4>
+<p>Hoàn tất Tier Setup — mở khóa quyền lợi mới</p>
+<div class="flow-wow">FOMO: Đồng nghiệp đã kích hoạt Tier</div>
+<div class="flow-product">Tier</div>
+</div></div><div class="grid"><div class="card span-6 tail-card"><p class="card-title">📦 Gói giải pháp</p><div class="chip-wrap"><span class="tag">Tier Salary Tài khoản</span><span class="tag">Smart Salary Split</span><span class="tag">Salary Insight</span><span class="tag">Thẻ tín dụng Pre-approved</span><span class="tag">Smart Saving Pocket</span><span class="tag">Tier</span></div></div><div class="card span-6 tail-card"><p class="card-title">🤝 Đối tác trọng yếu</p><div class="chip-wrap"><span class="tag">Doanh nghiệp trả lương (B2B Payroll)</span><span class="tag">HR / Total Rewards</span><span class="tag">Nền tảng HRM/Payroll SaaS</span><span class="tag">Công ty bảo hiểm sức khỏe DN</span><span class="tag">Coworking / Business Park</span><span class="tag">KOL career/productivity</span></div></div><div class="card span-6 tail-card"><p class="card-title">🔥 Cơ chế FOMO</p><p class="desc">Team Challenge nội bộ: ’30 ngày giữ lại 20% lương’. Đồng nghiệp cùng dùng → không muốn đứng ngoài.</p></div><div class="card span-6 tail-card"><p class="card-title">📋 Chính Sách</p><div class="chip-wrap"><span class="tag">Payroll fast onboarding</span><span class="tag">Pre-approved card theo payroll data</span><span class="tag">Privacy pledge dữ liệu lương</span><span class="tag">Financial wellbeing workshop miễn phí</span></div></div><div class="card span-6 tail-card"><p class="card-title">📊 KPI trọng tâm</p><div class="chip-wrap"><span class="tag">Số DN ký payroll</span><span class="tag">Số NV mở TK</span><span class="tag">Tỷ lệ nhận lương active</span><span class="tag">CASA BQ sau 3 tháng</span><span class="tag">Card penetration</span><span class="tag">Saving pocket activation</span></div></div></div></section><section class="content" id="tab2"><div class="page-head"><div class="title-wrap"><div class="big-num">03</div><div><h1>Young Traveller</h1><p class="section-sub">25–40 tuổi | Thu nhập 30–120 triệu/tháng | Thích du lịch, ăn uống, trải nghiệm nhóm/cặp đôi/gia đình trẻ.</p></div></div></div><div class="hero-card segment-hero compact-cvp">
+<div class="hero-kicker">CVP</div>
+<p>Đi chơi không đau đầu tiền bạc: thanh toán mượt, chia tiền nhóm tự động, số dư vẫn sinh lời.</p>
+</div><div class="segment-core">
+<div class="pain-stack">
+<div class="pitch-card functional">
+<div class="kicker">Functional Pain</div>
+<h3>Sợ phí FX, khó kiểm soát chi tiêu nhóm, chia tiền thủ công và không biết thẻ nào lợi nhất.</h3>
+</div>
+<div class="pitch-card emotional">
+<div class="kicker">Emotional Pain</div>
+<h3>Muốn chuyến đi vui trọn vẹn; không mất mood vì tiền và không bỏ lỡ deal/quyền lợi.</h3>
+</div>
+</div>
+<div class="pitch-card offerings">
+<div class="kicker">Offerings</div>
+<div class="mini-tags"><span>Travel Group Wallet</span><span>FX Smart Card</span><span>Split Bill</span><span>Trip Recap</span><span>Travel Insurance</span></div>
+</div>
+</div><div class="entry-moment">
+<div class="kicker">Entry Moment</div>
+<h3>T-30 đến D+1: từ lúc lên kế hoạch chuyến đi đến recap sau chuyến đi.</h3>
+<p>Nhảy vào đúng khoảnh khắc nhu cầu bộc lộ mạnh nhất: tạo wow trước, sau đó kích hoạt FOMO/referral tự nhiên.</p>
+</div><div class="section-line"><span>Hành trình kích hoạt — nhảy vào đúng moment, tạo đúng cảm xúc</span></div><div class="clean-note"><strong>Flow kích hoạt:</strong> mỗi bước chỉ giữ 1 thông điệp chính, 1 sản phẩm kích hoạt và 1 wow/FOMO để đội bán hàng dễ pitch và đội sản phẩm dễ triển khai.</div><div class="flow-grid">
+<div class="flow-card">
+<div class="flow-stage">T-30 ngày</div>
+<h4>Travel Pocket</h4>
+<p>Lập budget + tạo Travel Pocket sinh lời</p>
+<div class="flow-wow">Tiền chưa dùng vẫn sinh lời</div>
+<div class="flow-product">Travel Pocket</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">T-14 ngày</div>
+<h4>Group Invite</h4>
+<p>Mời bạn vào Trip Wallet — cả nhóm cùng vào</p>
+<div class="flow-wow">FOMO: Chưa vào thì chuyến đi vẫn đau đầu tiền</div>
+<div class="flow-product">Travel Group Wallet</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">Khi booking</div>
+<h4>FX Smart Card</h4>
+<p>Gợi ý thẻ/FX tối ưu cho điểm đến cụ thể</p>
+<div class="flow-wow">Không bỏ lỡ tỷ giá tốt</div>
+<div class="flow-product">FX Smart Card</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">Trong chuyến đi</div>
+<h4>Split Bill RT</h4>
+<p>Tự nhận diện giao dịch nhóm → split realtime</p>
+<div class="flow-wow">Wow: 'Giao dịch 8.4tr — chia đều 4 người?'</div>
+<div class="flow-product">Split Bill</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">Sau GD</div>
+<h4>Debt Tracker</h4>
+<p>Ai trả / ai còn nợ ai — không cần nhắc thủ công</p>
+<div class="flow-wow">Không ngại nhắc tiền</div>
+<div class="flow-product">Group Tracker</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">Sau chuyến đi</div>
+<h4>Trip Recap</h4>
+<p>Tổng chi — ai chưa trả — tiết kiệm hơn budget</p>
+<div class="flow-wow">Wow: có thứ để share lên story</div>
+<div class="flow-product">Tổng kết sau chuyến đi</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">T+7 ngày</div>
+<h4>Auto Return</h4>
+<p>Tiền dư tự động về Saving Pocket — tiếp tục sinh lời</p>
+<div class="flow-wow">Wow: Smart money feeling</div>
+<div class="flow-product">Smart Yield</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">T+30 ngày</div>
+<h4>Next Trip</h4>
+<p>Bắt đầu tạo wallet cho chuyến tiếp theo</p>
+<div class="flow-wow">Habit formation</div>
+<div class="flow-product">Saving Goal</div>
+</div></div><div class="grid"><div class="card span-6 tail-card"><p class="card-title">📦 Gói giải pháp</p><div class="chip-wrap"><span class="tag">Travel Pocket (sinh lời)</span><span class="tag">Travel Group Wallet</span><span class="tag">Split Bill Realtime</span><span class="tag">FX Smart Card</span><span class="tag">Real-time Spend Tracker</span><span class="tag">Travel Insurance Embedded</span><span class="tag">Tổng kết sau chuyến đi Recap (shareable)</span></div></div><div class="card span-6 tail-card"><p class="card-title">🤝 Đối tác trọng yếu</p><div class="chip-wrap"><span class="tag">Airlines (Vietnam Airlines, Vietjet, Bamboo, Scoot...)</span><span class="tag">OTA: Traveloka, Booking, Agoda, Klook</span><span class="tag">Card Schemes: Visa/Mastercard/JCB</span><span class="tag">eSIM / Roaming Provider</span><span class="tag">Bảo hiểm du lịch</span><span class="tag">Airport Lounge / Fast Track</span><span class="tag">Creator du lịch (TikTok/Instagram)</span></div></div><div class="card span-6 tail-card"><p class="card-title">🔥 Cơ chế FOMO</p><p class="desc">Group unlock: cả nhóm cùng dùng mới mở Travel Wallet. Social proof: ’Nhóm bạn bạn đã tạo travel wallet’. Limited trip pack 7 ngày.</p></div><div class="card span-6 tail-card"><p class="card-title">📋 Chính Sách</p><div class="chip-wrap"><span class="tag">Split bill miễn phí realtime</span><span class="tag">Travel pocket sinh lời linh hoạt</span><span class="tag">FX minh bạch không ẩn phí</span><span class="tag">Travel insurance 1 click</span><span class="tag">Referral theo nhóm chuyến đi</span></div></div><div class="card span-6 tail-card"><p class="card-title">📊 KPI trọng tâm</p><div class="chip-wrap"><span class="tag">Số Travel Pocket tạo mới</span><span class="tag">Group wallet formation rate</span><span class="tag">FX transaction volume</span><span class="tag">Travel card spend</span><span class="tag">Travel insurance attach rate</span><span class="tag">Referral rate per trip</span></div></div></div></section><section class="content" id="tab3"><div class="page-head"><div class="title-wrap"><div class="big-num">04</div><div><h1>Emerging Investor</h1><p class="section-sub">27–42 tuổi | Thu nhập 50–120 triệu/tháng | Có 200 triệu đến vài tỷ tiền nhàn rỗi, đầu tư rải rác.</p></div></div></div><div class="hero-card segment-hero compact-cvp">
+<div class="hero-kicker">CVP</div>
+<p>Tiền không nằm yên. Future+ giúp chia tài sản thành 3 lớp: dùng ngay, dự phòng, sinh lời/tăng trưởng.</p>
+</div><div class="segment-core">
+<div class="pain-stack">
+<div class="pitch-card functional">
+<div class="kicker">Functional Pain</div>
+<h3>Tiền nằm ở tài khoản thanh toán quá lâu; thiếu framework phân bổ tài sản và quỹ dự phòng.</h3>
+</div>
+<div class="pitch-card emotional">
+<div class="kicker">Emotional Pain</div>
+<h3>Sợ bỏ lỡ cơ hội sinh lời nhưng cũng sợ bị bán sản phẩm rủi ro, thiếu minh bạch.</h3>
+</div>
+</div>
+<div class="pitch-card offerings">
+<div class="kicker">Offerings</div>
+<div class="mini-tags"><span>Idle Money Radar</span><span>3-Layer Money Plan</span><span>Flex Deposit</span><span>Fund Starter</span><span>Wealth Advisory</span></div>
+</div>
+</div><div class="entry-moment">
+<div class="kicker">Entry Moment</div>
+<h3>Khi phát hiện số dư cao 30–60 ngày hoặc vừa có khoản tiền lớn vào tài khoản.</h3>
+<p>Nhảy vào đúng khoảnh khắc nhu cầu bộc lộ mạnh nhất: tạo wow trước, sau đó kích hoạt FOMO/referral tự nhiên.</p>
+</div><div class="section-line"><span>Hành trình kích hoạt — nhảy vào đúng moment, tạo đúng cảm xúc</span></div><div class="clean-note"><strong>Flow kích hoạt:</strong> mỗi bước chỉ giữ 1 thông điệp chính, 1 sản phẩm kích hoạt và 1 wow/FOMO để đội bán hàng dễ pitch và đội sản phẩm dễ triển khai.</div><div class="flow-grid">
+<div class="flow-card">
+<div class="flow-stage">Signal</div>
+<h4>Idle Alert</h4>
+<p>Tiền của bạn đã nằm yên 47 ngày → Sợ bỏ lỡ cơ hội</p>
+<div class="flow-wow">FOMO: 'Tiền không làm việc'</div>
+<div class="flow-product">Thông báo thông minh</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W1</div>
+<h4>3-Layer Plan</h4>
+<p>Gợi ý chia 3 lớp: 60tr dự phòng / 160tr linh hoạt / 100tr tăng trưởng</p>
+<div class="flow-wow">Wow: App không bán SP — đưa ra cấu trúc tiền</div>
+<div class="flow-product">Money Planning</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W2</div>
+<h4>Simulation</h4>
+<p>Mô phỏng lợi ích khi phân bổ — số liệu cụ thể</p>
+<div class="flow-wow">Tự tin quyết định</div>
+<div class="flow-product">Calculator</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W3</div>
+<h4>Risk Profiling</h4>
+<p>Đánh giá khẩu vị rủi ro — minh bạch, không ép buộc</p>
+<div class="flow-wow">Xây trust</div>
+<div class="flow-product">Suitability Check</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W4</div>
+<h4>1-Click Allocation</h4>
+<p>Hành động ngay: chuyển tiền giữa các lớp trong 1 bước</p>
+<div class="flow-wow">Không friction</div>
+<div class="flow-product">Fund/Deposit</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W6</div>
+<h4>Progress Report</h4>
+<p>Theo dõi kết quả sau 30 ngày — thấy tiền tăng trưởng</p>
+<div class="flow-wow">Cảm giác mình giàu lên</div>
+<div class="flow-product">Wealth Dashboard</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">AUM đạt ngưỡng</div>
+<h4>Advisor Invite</h4>
+<p>Còn 3 slot tư vấn Tier Wealth tuần này</p>
+<div class="flow-wow">FOMO: Limited slot</div>
+<div class="flow-product">Advisory</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">Ongoing</div>
+<h4>Portfolio Check</h4>
+<p>Danh mục của bạn có lệch rủi ro không?</p>
+<div class="flow-wow">Peer benchmark</div>
+<div class="flow-product">Health Check</div>
+</div></div><div class="grid"><div class="card span-6 tail-card"><p class="card-title">📦 Gói giải pháp</p><div class="chip-wrap"><span class="tag">Idle Money Radar</span><span class="tag">3-Layer Money Plan</span><span class="tag">Flexible Yield Tài khoản</span><span class="tag">Goal-based Deposit</span><span class="tag">Fund Starter (quỹ mở đầu tiên)</span><span class="tag">Portfolio Health Check</span><span class="tag">Tier Advisor Booking</span></div></div><div class="card span-6 tail-card"><p class="card-title">🤝 Đối tác trọng yếu</p><div class="chip-wrap"><span class="tag">Công ty quản lý quỹ (VinaCapital, Dragon Capital...)</span><span class="tag">Công ty chứng khoán cùng hệ sinh thái</span><span class="tag">Wealth Advisor / RM cao cấp</span><span class="tag">KOL tài chính cá nhân uy tín</span><span class="tag">Cộng đồng nghề nghiệp thu nhập cao</span></div></div><div class="card span-6 tail-card"><p class="card-title">🔥 Cơ chế FOMO</p><p class="desc">Idle money alert: ’Tiền đã nằm yên 47 ngày’. Peer benchmark: nhóm cùng độ tuổi đã tối ưu. Goal countdown: ’Còn 9 tháng đạt 500 triệu’. Limited advisor slot.</p></div><div class="card span-6 tail-card"><p class="card-title">📋 Chính Sách</p><div class="chip-wrap"><span class="tag">Suitability/risk profiling bắt buộc</span><span class="tag">Không ép mua qua nudge thô</span><span class="tag">Tư vấn theo mục tiêu</span><span class="tag">Minh bạch phí/lợi suất/rủi ro</span><span class="tag">Advisor escalation khi SP phức tạp</span></div></div><div class="card span-6 tail-card"><p class="card-title">📊 KPI trọng tâm</p><div class="chip-wrap"><span class="tag">AUM tăng trưởng</span><span class="tag">Số KH có Idle Money Radar</span><span class="tag">Tỷ lệ chuyển tiền sang deposit/fund</span><span class="tag">Portfolio health check rate</span><span class="tag">Advisor conversion rate</span></div></div></div></section><section class="content" id="tab4"><div class="page-head"><div class="title-wrap"><div class="big-num">05</div><div><h1>Family Builder</h1><p class="section-sub">30–40 tuổi | Thu nhập hộ gia đình 60–150 triệu/tháng | Chuẩn bị kết hôn, có con nhỏ hoặc tính chuyện mua nhà.</p></div></div></div><div class="hero-card segment-hero compact-cvp">
+<div class="hero-kicker">CVP</div>
+<p>Giúp gia đình trẻ biết mình có đủ khả năng mua nhà, nuôi con, bảo vệ sức khỏe và vẫn sống thoải mái.</p>
+</div><div class="segment-core">
+<div class="pain-stack">
+<div class="pitch-card functional">
+<div class="kicker">Functional Pain</div>
+<h3>Không rõ vay bao nhiêu là an toàn; chi phí con cái, y tế, giáo dục tăng nhanh; tiền 2 vợ chồng phân tán.</h3>
+</div>
+<div class="pitch-card emotional">
+<div class="kicker">Emotional Pain</div>
+<h3>Không muốn sống tốt hôm nay nhưng bất an ngày mai; muốn cảm giác có trách nhiệm với gia đình.</h3>
+</div>
+</div>
+<div class="pitch-card offerings">
+<div class="kicker">Offerings</div>
+<div class="mini-tags"><span>Mortgage Readiness</span><span>Family Finance Cockpit</span><span>Education Saving</span><span>Protection Check</span><span>Family Account</span></div>
+</div>
+</div><div class="entry-moment">
+<div class="kicker">Entry Moment</div>
+<h3>Life event: cưới, thuê nhà đều, giao dịch bệnh viện, học phí hoặc bắt đầu tìm mua nhà.</h3>
+<p>Nhảy vào đúng khoảnh khắc nhu cầu bộc lộ mạnh nhất: tạo wow trước, sau đó kích hoạt FOMO/referral tự nhiên.</p>
+</div><div class="section-line"><span>Hành trình kích hoạt — nhảy vào đúng moment, tạo đúng cảm xúc</span></div><div class="clean-note"><strong>Flow kích hoạt:</strong> mỗi bước chỉ giữ 1 thông điệp chính, 1 sản phẩm kích hoạt và 1 wow/FOMO để đội bán hàng dễ pitch và đội sản phẩm dễ triển khai.</div><div class="flow-grid">
+<div class="flow-card">
+<div class="flow-stage">Life Event</div>
+<h4>Family Trigger</h4>
+<p>Phát hiện life event: cưới, sinh con, thuê nhà, học phí</p>
+<div class="flow-wow">Nhảy vào đúng moment</div>
+<div class="flow-product">Event Detection</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W1</div>
+<h4>Rent vs Buy</h4>
+<p>So sánh thuê nhà và mua nhà với thu nhập hiện tại</p>
+<div class="flow-wow">Bớt mơ hồ — tự tin hơn</div>
+<div class="flow-product">Calculator</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W2</div>
+<h4>Mortgage Ready</h4>
+<p>Với thu nhập hộ gia đình X, mua nhà 4.2 tỷ — trả góp an toàn</p>
+<div class="flow-wow">WOW MOMENT: Số cụ thể, không mơ hồ</div>
+<div class="flow-product">Pre-approval</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W3</div>
+<h4>Couple Invite</h4>
+<p>Mời vợ/chồng cùng xem Family Finance Cockpit</p>
+<div class="flow-wow">Đồng thuận trong gia đình</div>
+<div class="flow-product">Family Tài khoản</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W4</div>
+<h4>Protection Check</h4>
+<p>Gia đình bạn mới có X tháng quỹ dự phòng — đủ chưa?</p>
+<div class="flow-wow">FOMO: Protection gap</div>
+<div class="flow-product">Insurance Lead</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W6</div>
+<h4>Education Saving</h4>
+<p>Còn 24 tháng trước khi con vào lớp 1 — tạo quỹ học phí</p>
+<div class="flow-wow">Education timeline urgency</div>
+<div class="flow-product">Saving Goal</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W8</div>
+<h4>Advisory O2O</h4>
+<p>Tư vấn vợ chồng về kế hoạch mua nhà + tài chính gia đình</p>
+<div class="flow-wow">Chốt phương án cụ thể</div>
+<div class="flow-product">RM/Advisor</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W12</div>
+<h4>Family Bundle</h4>
+<p>Gói gia đình: TK chung + bảo hiểm + vay + tiết kiệm</p>
+<div class="flow-wow">Full relationship</div>
+<div class="flow-product">Bundle</div>
+</div></div><div class="grid"><div class="card span-6 tail-card"><p class="card-title">📦 Gói giải pháp</p><div class="chip-wrap"><span class="tag">Family Tài khoản (phân quyền 2 vợ chồng)</span><span class="tag">Rent vs Buy Calculator</span><span class="tag">Mortgage Pre-approval</span><span class="tag">Child Education Pocket</span><span class="tag">Family Protection Check</span><span class="tag">Household Spending Insight</span><span class="tag">Couple Goal (shared savings)</span></div></div><div class="card span-6 tail-card"><p class="card-title">🤝 Đối tác trọng yếu</p><div class="chip-wrap"><span class="tag">Chủ đầu tư BĐS (Vinhomes, MidLand...)</span><span class="tag">Sàn BĐS / Proptech (Batdongsan, Propzy)</span><span class="tag">Bệnh viện / Phòng khám</span><span class="tag">Trường học / Edtech</span><span class="tag">Bảo hiểm sức khỏe / Nhân thọ</span><span class="tag">Nội thất / Điện máy (mua nhà xong)</span></div></div><div class="card span-6 tail-card"><p class="card-title">🔥 Cơ chế FOMO</p><p class="desc">Home opportunity: ’Dự án bạn quan tâm còn X căn phù hợp ngân sách’. Education timeline: ’Còn 24 tháng con vào lớp 1’. Protection gap: ’Gia đình mới có X tháng quỹ dự phòng’.</p></div><div class="card span-6 tail-card"><p class="card-title">📋 Chính Sách</p><div class="chip-wrap"><span class="tag">Couple consent / data sharing rõ ràng</span><span class="tag">Mortgage pre-check không cam kết quá mức</span><span class="tag">Partner BĐS phải kiểm duyệt</span><span class="tag">Advisory booking</span><span class="tag">Insurance suitability</span></div></div><div class="card span-6 tail-card"><p class="card-title">📊 KPI trọng tâm</p><div class="chip-wrap"><span class="tag">Mortgage lead chất lượng</span><span class="tag">Family account opening rate</span><span class="tag">Education saving activation</span><span class="tag">Insurance attach rate</span><span class="tag">Couple onboarding rate</span></div></div></div></section><section class="content" id="tab5"><div class="page-head"><div class="title-wrap"><div class="big-num">06</div><div><h1>Young Business Owners</h1><p class="section-sub">Chủ shop/SME, creator/KOL, chuyên gia tự do | Thu nhập tốt nhưng không đều, dòng tiền cá nhân/kinh doanh lẫn lộn.</p></div></div></div><div class="hero-card segment-hero compact-cvp">
+<div class="hero-kicker">CVP</div>
+<p>Biến dòng tiền kinh doanh hằng ngày thành hồ sơ tài chính — quản lý tiền tốt hơn, mở hạn mức nhanh hơn.</p>
+</div><div class="segment-core">
+<div class="pain-stack">
+<div class="pitch-card functional">
+<div class="kicker">Functional Pain</div>
+<h3>Nhận tiền nhiều nguồn, khó tracking, khó chứng minh thu nhập và cần vốn đúng mùa cao điểm.</h3>
+</div>
+<div class="pitch-card emotional">
+<div class="kicker">Emotional Pain</div>
+<h3>Muốn được ngân hàng nhìn nhận đúng năng lực tài chính; sợ mất cơ hội vì thiếu vốn đúng lúc.</h3>
+</div>
+</div>
+<div class="pitch-card offerings">
+<div class="kicker">Offerings</div>
+<div class="mini-tags"><span>Business Cashflow Account</span><span>QR/POS</span><span>Merchant Dashboard</span><span>Pre-offer Credit Line</span><span>Tax/Income Report</span></div>
+</div>
+</div><div class="entry-moment">
+<div class="kicker">Entry Moment</div>
+<h3>Khi nhận QR/POS, doanh thu tăng, mùa cao điểm đến hoặc tiền platform về tài khoản.</h3>
+<p>Nhảy vào đúng khoảnh khắc nhu cầu bộc lộ mạnh nhất: tạo wow trước, sau đó kích hoạt FOMO/referral tự nhiên.</p>
+</div><div class="section-line"><span>Hành trình kích hoạt — nhảy vào đúng moment, tạo đúng cảm xúc</span></div><div class="clean-note"><strong>Flow kích hoạt:</strong> mỗi bước chỉ giữ 1 thông điệp chính, 1 sản phẩm kích hoạt và 1 wow/FOMO để đội bán hàng dễ pitch và đội sản phẩm dễ triển khai.</div><div class="flow-grid">
+<div class="flow-card">
+<div class="flow-stage">Onboard</div>
+<h4>QR/POS Setup</h4>
+<p>Nhận tiền qua QR/POS — onboard nhanh 5 phút</p>
+<div class="flow-wow">Trông chuyên nghiệp ngay</div>
+<div class="flow-product">Business Tài khoản</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W1</div>
+<h4>Cashflow Dashboard</h4>
+<p>App tự phân loại: doanh thu / chi phí / lợi nhuận</p>
+<div class="flow-wow">Wow: 'App hiểu business của mình'</div>
+<div class="flow-product">Business Dashboard</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W2</div>
+<h4>Money Separation</h4>
+<p>Tách tài khoản cá nhân và kinh doanh rõ ràng</p>
+<div class="flow-wow">Minh bạch tài chính</div>
+<div class="flow-product">Dual Tài khoản</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W3</div>
+<h4>Tax Pocket</h4>
+<p>Tự động tách tiền thuế / lương / lợi nhuận</p>
+<div class="flow-wow">Không sợ hết tiền đóng thuế</div>
+<div class="flow-product">Tax/Profit Pocket</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W4</div>
+<h4>Working Capital</h4>
+<p>Doanh thu 30 ngày tăng 23% — hạn mức dự kiến X triệu</p>
+<div class="flow-wow">Wow: Số cụ thể từ dòng tiền thật</div>
+<div class="flow-product">Pre-credit</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">Mùa cao điểm</div>
+<h4>Seasonal Line</h4>
+<p>Chuẩn bị vốn cho mùa sale 6.6/9.9/11.11</p>
+<div class="flow-wow">FOMO: Campaign season</div>
+<div class="flow-product">Flexible Credit</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W8</div>
+<h4>Business Card</h4>
+<p>Thẻ business cho chi phí quảng cáo / vận hành</p>
+<div class="flow-wow">Chuyên nghiệp hóa</div>
+<div class="flow-product">Business Card</div>
+</div>
+<div class="flow-card">
+<div class="flow-stage">W12</div>
+<h4>Merchant Tier</h4>
+<p>Đạt hạng Merchant Tier — quyền lợi cao hơn</p>
+<div class="flow-wow">Status + loyalty</div>
+<div class="flow-product">Tier</div>
+</div></div><div class="grid"><div class="card span-6 tail-card"><p class="card-title">📦 Gói giải pháp</p><div class="chip-wrap"><span class="tag">Creator/Business Tài khoản</span><span class="tag">QR/POS onboarding</span><span class="tag">Cashflow Dashboard</span><span class="tag">Business Card</span><span class="tag">Working Capital Line (dòng tiền thay sao kê)</span><span class="tag">Tax/Profit Pocket</span><span class="tag">Merchant Tier</span></div></div><div class="card span-6 tail-card"><p class="card-title">🤝 Đối tác trọng yếu</p><div class="chip-wrap"><span class="tag">Sàn TMĐT: Shopee/Lazada/Tiki</span><span class="tag">TikTok Shop ecosystem</span><span class="tag">POS/QR/Payment Gateway providers</span><span class="tag">Agency quảng cáo (Meta/Google spend)</span><span class="tag">Coworking / Startup Hub</span><span class="tag">Hội ngành: Bác sĩ, Luật sư, Kiến trúc sư</span><span class="tag">Kế toán/Thuế SaaS</span></div></div><div class="card span-6 tail-card"><p class="card-title">🔥 Cơ chế FOMO</p><p class="desc">Campaign season: ’Chuẩn bị vốn cho mùa sale 6.6’. Inventory window: ’Hạn mức nhập hàng hiệu lực X ngày’. Creator cohort: ’Creator cùng ngành đang dùng’. Merchant rank gamification.</p></div><div class="card span-6 tail-card"><p class="card-title">📋 Chính Sách</p><div class="chip-wrap"><span class="tag">Alternative credit scoring từ dòng tiền</span><span class="tag">Tách tài khoản cá/kinh doanh</span><span class="tag">Hạn mức linh hoạt theo mùa</span><span class="tag">Merchant fee minh bạch</span><span class="tag">Creator income verification</span><span class="tag">Fraud/risk monitoring</span></div></div><div class="card span-6 tail-card"><p class="card-title">📊 KPI trọng tâm</p><div class="chip-wrap"><span class="tag">QR/POS merchant onboard</span><span class="tag">Working capital lead</span><span class="tag">Business account CASA</span><span class="tag">Merchant card spend</span><span class="tag">Seasonal credit utilization</span><span class="tag">Merchant retention rate</span></div></div></div></section><section class="content" id="tab6"><div class="page-head"><div class="title-wrap"><div class="big-num">07</div><div><h1>Current Customers</h1><p class="section-sub">Kích hoạt đúng nhóm khách hàng hiện hữu để tăng active, CASA, AUM và ARPU.</p></div></div></div>
+<div class="focus-hero"><div class="hero-kicker">Current Customers</div><h2>existing customer activation playbook</h2><p>Dùng dữ liệu hành vi để chọn đúng next best action, thay vì chạy campaign đại trà.</p></div>
+<div class="clean-section-line"><span>I. 5 nhóm khách hàng hiện hữu cần kích hoạt</span></div>
+<p class="section-intro">Mục tiêu không phải bắn đại trà, mà là nhận diện đúng tín hiệu hành vi và đưa ra một hành động tiếp theo có xác suất chuyển đổi cao nhất.</p>
+<div class="focus-grid">
+<div class="focus-card"><p class="focus-title accent">Dormant Young</p><p class="focus-line"><span class="mini-label">Tín hiệu</span>có tài khoản, giao dịch rất thấp, số dư thấp</p><p class="focus-line"><span class="mini-label">Cú kích hoạt</span>lifestyle fee waiver + nhắc lại giá trị app</p><div class="focus-chip-row"><span class="focus-chip">re-activation</span><span class="focus-chip neutral">MAU</span></div></div>
+<div class="focus-card"><p class="focus-title accent">Salary User</p><p class="focus-line"><span class="mini-label">Tín hiệu</span>lương về đều nhưng rút/chuyển hết sau 1–2 ngày</p><p class="focus-line"><span class="mini-label">Cú kích hoạt</span>smart split + salary insight + saving pocket</p><div class="focus-chip-row"><span class="focus-chip">giữ dòng tiền</span><span class="focus-chip neutral">CASA</span></div></div>
+<div class="focus-card"><p class="focus-title accent">Card User</p><p class="focus-line"><span class="mini-label">Tín hiệu</span>có thẻ nhưng spend thấp, ít thấy quyền lợi</p><p class="focus-line"><span class="mini-label">Cú kích hoạt</span>card spend optimizer theo lifestyle thật</p><div class="focus-chip-row"><span class="focus-chip">tăng spend</span><span class="focus-chip neutral">card usage</span></div></div>
+<div class="focus-card"><p class="focus-title accent">Idle Money Holder</p><p class="focus-line"><span class="mini-label">Tín hiệu</span>số dư cao nằm yên nhiều ngày</p><p class="focus-line"><span class="mini-label">Cú kích hoạt</span>idle money radar + deposit/fund gợi ý</p><div class="focus-chip-row"><span class="focus-chip">tăng AUM</span><span class="focus-chip neutral">conversion</span></div></div>
+<div class="focus-card"><p class="focus-title accent">Credit Ready</p><p class="focus-line"><span class="mini-label">Tín hiệu</span>thu nhập đều, lịch sử giao dịch tốt, có nhu cầu lớn</p><p class="focus-line"><span class="mini-label">Cú kích hoạt</span>pre-approved card/loan + readiness check</p><div class="focus-chip-row"><span class="focus-chip">tăng lending</span><span class="focus-chip neutral">lead</span></div></div>
+<div class="focus-card"><p class="focus-title accent">Next best action</p><p class="focus-line"><span class="mini-label">Nguyên tắc</span>mỗi khách hàng chỉ nhận 1 gợi ý rõ nhất tại đúng thời điểm</p><p class="focus-line"><span class="mini-label">Kỳ vọng</span>ít nhiễu hơn, chuyển đổi cao hơn, cảm giác cá nhân hóa thật</p></div>
+</div>
+<div class="clean-section-line"><span>II. Tier upgrade journey</span></div>
+<div class="clean-flow">
+<div class="clean-step"><div class="step-num">1</div><h4>Score</h4><p>chấm điểm từ số dư, lương, giao dịch</p></div>
+<div class="clean-step"><div class="step-num">2</div><h4>Invite</h4><p>mời kích hoạt tier theo quyền lợi phù hợp</p></div>
+<div class="clean-step"><div class="step-num">3</div><h4>Insight</h4><p>hiện dashboard tài chính cá nhân</p></div>
+<div class="clean-step"><div class="step-num">4</div><h4>Action</h4><p>gợi ý 1 hành động dễ làm ngay</p></div>
+<div class="clean-step"><div class="step-num">5</div><h4>Upgrade</h4><p>mở khóa quyền lợi theo hành vi</p></div>
+<div class="clean-step"><div class="step-num">6</div><h4>Recap</h4><p>tóm tắt giá trị đã tạo sau 30 ngày</p></div>
+<div class="clean-step"><div class="step-num">7</div><h4>Expand</h4><p>chuyển sang sản phẩm kế tiếp</p></div>
+</div>
+<div class="clean-section-line"><span>III. Các hành động ưu tiên</span></div>
+<div class="focus-grid">
+<div class="focus-card wide"><p class="focus-title">lương về rồi rút hết</p><div class="playbook-row"><div><span>NBA</span><p>auto-save 10%</p></div><div><span>Message</span><p>giữ lại trước khi chi</p></div><div><span>KPI</span><p>saving pocket</p></div></div></div>
+<div class="focus-card wide"><p class="focus-title">số dư cao trên 30 ngày</p><div class="playbook-row"><div><span>NBA</span><p>tiền gửi linh hoạt</p></div><div><span>Message</span><p>tiền đang chưa tối ưu</p></div><div><span>KPI</span><p>AUM</p></div></div></div>
+<div class="focus-card wide"><p class="focus-title">chi nhiều qua debit</p><div class="playbook-row"><div><span>NBA</span><p>mở credit card</p></div><div><span>Message</span><p>đừng mất cashback</p></div><div><span>KPI</span><p>card spend</p></div></div></div>
+<div class="focus-card wide"><p class="focus-title">giao dịch du lịch tăng</p><div class="playbook-row"><div><span>NBA</span><p>travel wallet</p></div><div><span>Message</span><p>chuẩn bị chuyến đi thông minh</p></div><div><span>KPI</span><p>FX / wallet</p></div></div></div>
+</div>
+</section><section class="content" id="tab7"><div class="page-head"><div class="title-wrap"><div class="big-num">08</div><div><h1>Đối tác trọng yếu</h1><p class="section-sub">Ai làm gì, kéo vào lúc nào và đo bằng KPI nào.</p></div></div></div>
+<div class="focus-hero"><div class="hero-kicker">Key Partners</div><h2>partner &amp; internal squad playbook</h2><p>Tổ chức nguồn lực theo use case: payroll, travel, housing, wealth, merchant và HRTech.</p></div>
+<div class="clean-section-line"><span>I. Vai trò nội bộ cần kéo vào cuộc</span></div>
+<p class="section-intro">Mỗi đơn vị chỉ cần một vai trò rõ: xây sản phẩm, chọn khách hàng, bán qua quan hệ doanh nghiệp, kích hoạt tại chi nhánh và đo lường kết quả.</p>
+<div class="focus-grid">
+<div class="focus-card"><p class="focus-title accent">Digital Banking / Product</p><p class="focus-line"><span class="mini-label">Vai trò</span>xây Smart Split, Travel Wallet, Idle Money Radar</p><p class="focus-line"><span class="mini-label">KPI</span>activation, feature adoption, conversion</p></div>
+<div class="focus-card"><p class="focus-title accent">Data / AI</p><p class="focus-line"><span class="mini-label">Vai trò</span>segmentation, next best action, trigger engine</p><p class="focus-line"><span class="mini-label">KPI</span>uplift, precision, conversion rate</p></div>
+<div class="focus-card"><p class="focus-title accent">B2B Sales / RM</p><p class="focus-line"><span class="mini-label">Vai trò</span>ký payroll partnership với doanh nghiệp</p><p class="focus-line"><span class="mini-label">KPI</span>new payroll, new-to-bank, salary CASA</p></div>
+<div class="focus-card"><p class="focus-title accent">Chi nhánh / Priority</p><p class="focus-line"><span class="mini-label">Vai trò</span>tư vấn tier, mortgage, family finance</p><p class="focus-line"><span class="mini-label">KPI</span>lead, AUM, lending conversion</p></div>
+<div class="focus-card"><p class="focus-title accent">Marketing / CRM</p><p class="focus-line"><span class="mini-label">Vai trò</span>journey, message, in-app campaign</p><p class="focus-line"><span class="mini-label">KPI</span>CTR, MAU, product activation</p></div>
+<div class="focus-card"><p class="focus-title accent">Partnership</p><p class="focus-line"><span class="mini-label">Vai trò</span>mở use case qua travel, property, creator, merchant</p><p class="focus-line"><span class="mini-label">KPI</span>co-campaign lead, wallet creation, GMV</p></div>
+</div>
+<div class="clean-section-line"><span>II. Các đối tác ngoài theo use case</span></div>
+<div class="focus-grid">
+<div class="focus-card wide"><p class="focus-title">airlines &amp; ota</p><p class="focus-line">mở điểm chạm du lịch, travel wallet, FX card</p><div class="focus-chip-row"><span class="focus-chip">traveller</span><span class="focus-chip neutral">FX spend</span></div></div>
+<div class="focus-card wide"><p class="focus-title">chủ đầu tư &amp; proptech</p><p class="focus-line">tạo mortgage lead, home readiness, family plan</p><div class="focus-chip-row"><span class="focus-chip">family builder</span><span class="focus-chip neutral">loan lead</span></div></div>
+<div class="focus-card wide"><p class="focus-title">card schemes</p><p class="focus-line">travel benefit, lounge, insurance, lifestyle spend</p><div class="focus-chip-row"><span class="focus-chip">card user</span><span class="focus-chip neutral">spend</span></div></div>
+<div class="focus-card wide"><p class="focus-title">creator / merchant platforms</p><p class="focus-line">income account, working capital, merchant card</p><div class="focus-chip-row"><span class="focus-chip">business owner</span><span class="focus-chip neutral">loan / GMV</span></div></div>
+<div class="focus-card wide"><p class="focus-title">wealth &amp; fund partners</p><p class="focus-line">starter portfolio, idle money conversion, AUM growth</p><div class="focus-chip-row"><span class="focus-chip">investor</span><span class="focus-chip neutral">AUM</span></div></div>
+<div class="focus-card wide"><p class="focus-title">hrtech / payroll systems</p><p class="focus-line">onboarding tự động, salary split, benefit dashboard</p><div class="focus-chip-row"><span class="focus-chip">payroll</span><span class="focus-chip neutral">new users</span></div></div>
+</div>
+</section><section class="content" id="tab8"><div class="page-head"><div class="title-wrap"><div class="big-num">09</div><div><h1>Campaigns</h1><p class="section-sub">Campaign ngắn, rõ CTA, có wow moment và chỉ số đo lường.</p></div></div></div>
+<div class="focus-hero"><div class="hero-kicker">Campaigns</div><h2>campaign playbook by money moment</h2><p>Mỗi campaign cần một hành động chính, một lợi ích rõ và một lý do để khách hàng làm ngay.</p></div>
+<div class="clean-section-line"><span>I. Campaign playbook theo đối tượng</span></div>
+<p class="section-intro">Mỗi campaign cần một hành động thật rõ: khách hàng hiểu ngay nên bấm gì, nhận giá trị gì và vì sao nên làm ngay.</p>
+<div class="focus-grid">
+<div class="focus-card"><p class="focus-title accent">lương về thông minh hơn</p><p class="focus-line"><span class="mini-label">CTA</span>bật chia lương tự động</p><p class="focus-line"><span class="mini-label">Wow</span>thấy tỷ lệ giữ tiền sau 30 ngày</p><div class="focus-chip-row"><span class="focus-chip">payroll</span><span class="focus-chip neutral">CASA</span></div></div>
+<div class="focus-card"><p class="focus-title accent">bạn đã đủ điều kiện tier</p><p class="focus-line"><span class="mini-label">CTA</span>kích hoạt tier</p><p class="focus-line"><span class="mini-label">Wow</span>cảm giác được công nhận năng lực tài chính</p><div class="focus-chip-row"><span class="focus-chip">tier</span><span class="focus-chip neutral">activation</span></div></div>
+<div class="focus-card"><p class="focus-title accent">tiền nhàn rỗi đang ngủ</p><p class="focus-line"><span class="mini-label">CTA</span>tối ưu tiền nhàn rỗi</p><p class="focus-line"><span class="mini-label">Wow</span>biết khoản tiền có thể sinh lời tốt hơn</p><div class="focus-chip-row"><span class="focus-chip">deposit</span><span class="focus-chip neutral">AUM</span></div></div>
+<div class="focus-card"><p class="focus-title accent">travel wallet cho chuyến đi</p><p class="focus-line"><span class="mini-label">CTA</span>tạo ví nhóm</p><p class="focus-line"><span class="mini-label">Wow</span>recap chi tiêu và chia tiền sau chuyến đi</p><div class="focus-chip-row"><span class="focus-chip">group wallet</span><span class="focus-chip neutral">referral</span></div></div>
+<div class="focus-card"><p class="focus-title accent">mua nhà có kế hoạch</p><p class="focus-line"><span class="mini-label">CTA</span>kiểm tra khả năng vay</p><p class="focus-line"><span class="mini-label">Wow</span>biết budget nhà an toàn trong vài phút</p><div class="focus-chip-row"><span class="focus-chip">mortgage</span><span class="focus-chip neutral">lead</span></div></div>
+<div class="focus-card"><p class="focus-title accent">business cashflow check</p><p class="focus-line"><span class="mini-label">CTA</span>xem hạn mức vốn dự kiến</p><p class="focus-line"><span class="mini-label">Wow</span>thấy sức khỏe dòng tiền của shop</p><div class="focus-chip-row"><span class="focus-chip">merchant</span><span class="focus-chip neutral">credit</span></div></div>
+</div>
+<div class="clean-section-line"><span>II. Kênh triển khai gọn</span></div>
+<div class="focus-grid">
+<div class="focus-card wide"><p class="focus-title">in-app / push</p><p class="focus-line">dùng cho trigger tức thời: lương về, số dư cao, travel spend, card usage</p></div>
+<div class="focus-card wide"><p class="focus-title">email / crm</p><p class="focus-line">dùng cho recap, education, monthly insight và lời mời nâng tier</p></div>
+<div class="focus-card wide"><p class="focus-title">b2b payroll</p><p class="focus-line">dùng cho onboarding theo doanh nghiệp, challenge nội bộ và co-branded launch</p></div>
+<div class="focus-card wide"><p class="focus-title">partner campaign</p><p class="focus-line">dùng cho du lịch, nhà ở, merchant, creator và các money moment ngoài app</p></div>
+</div>
+</section><section class="content" id="tab9"><div class="page-head"><div class="title-wrap"><div class="big-num">10</div><div><h1>FOMO Creation</h1><p class="section-sub">Tạo FOMO từ hành vi nhóm, social proof và timing, không phụ thuộc vào ưu đãi tài chính.</p></div></div></div>
+<div class="focus-hero"><div class="hero-kicker">FOMO Creation</div><h2>viral loops &amp; social triggers</h2><p>Biến các money moment thành cơ chế kéo bạn bè, đồng nghiệp, người yêu và gia đình cùng tham gia.</p></div>
+<div class="clean-section-line"><span>I. 5 cơ chế FOMO / referral chính</span></div>
+<p class="section-intro">FOMO không nên đến từ ưu đãi tài chính đơn thuần. FOMO mạnh hơn đến từ nhóm bạn, đồng nghiệp, người yêu, gia đình và những khoảnh khắc khách hàng sợ bỏ lỡ.</p>
+<div class="focus-grid">
+<div class="focus-card wide"><p class="focus-title accent">Travel Group Wallet</p><p class="focus-line"><span class="mini-label">Cơ chế</span>một người tạo trip, cả nhóm vào để split và theo dõi chi tiêu</p><p class="focus-line"><span class="mini-label">Trigger</span>chưa vào thì vẫn phải tính tiền thủ công</p><div class="focus-chip-row"><span class="focus-chip">group referral</span><span class="focus-chip neutral">wallet creation</span></div></div>
+<div class="focus-card wide"><p class="focus-title accent">Smart Salary Split Challenge</p><p class="focus-line"><span class="mini-label">Cơ chế</span>challenge 30 ngày giữ lại 20% thu nhập</p><p class="focus-line"><span class="mini-label">Trigger</span>đồng nghiệp đang tham gia, mình không muốn tụt lại</p><div class="focus-chip-row"><span class="focus-chip">company challenge</span><span class="focus-chip neutral">saving rate</span></div></div>
+<div class="focus-card wide"><p class="focus-title accent">Couple Finance Goal</p><p class="focus-line"><span class="mini-label">Cơ chế</span>tạo mục tiêu chung cho nhà, cưới, du lịch, con cái</p><p class="focus-line"><span class="mini-label">Trigger</span>người còn lại đã tạo goal, mình cần vào để theo dõi</p><div class="focus-chip-row"><span class="focus-chip">couple loop</span><span class="focus-chip neutral">shared goal</span></div></div>
+<div class="focus-card wide"><p class="focus-title accent">Idle Money Radar</p><p class="focus-line"><span class="mini-label">Cơ chế</span>phát hiện tiền nằm yên và nhắc tối ưu</p><p class="focus-line"><span class="mini-label">Trigger</span>người cùng độ tuổi đã tối ưu tiền tốt hơn</p><div class="focus-chip-row"><span class="focus-chip">peer benchmark</span><span class="focus-chip neutral">AUM</span></div></div>
+<div class="focus-card wide"><p class="focus-title accent">Merchant Sale Countdown</p><p class="focus-line"><span class="mini-label">Cơ chế</span>nhắc shop chuẩn bị vốn trước mùa sale</p><p class="focus-line"><span class="mini-label">Trigger</span>không chuẩn bị vốn sẽ bỏ lỡ đơn hàng</p><div class="focus-chip-row"><span class="focus-chip">business urgency</span><span class="focus-chip neutral">credit lead</span></div></div>
+<div class="focus-card wide"><p class="focus-title accent">Tier Unlock</p><p class="focus-line"><span class="mini-label">Cơ chế</span>khách hàng đạt điều kiện thì mở khóa quyền lợi mới</p><p class="focus-line"><span class="mini-label">Trigger</span>bạn đã đủ điều kiện, quyền lợi đang chờ kích hoạt</p><div class="focus-chip-row"><span class="focus-chip">status</span><span class="focus-chip neutral">tier activation</span></div></div>
+</div>
+<div class="clean-section-line"><span>II. Nguyên tắc copy cho FOMO</span></div>
+<div class="focus-grid">
+<div class="focus-card"><p class="focus-title">gần với hành vi thật</p><p class="focus-line">chỉ nhắc khi có tín hiệu: lương về, đặt vé, số dư cao, mùa sale, goal chung</p></div>
+<div class="focus-card"><p class="focus-title">gắn với nhóm xã hội</p><p class="focus-line">bạn bè, đồng nghiệp, partner, gia đình là nguồn tạo FOMO tự nhiên nhất</p></div>
+<div class="focus-card"><p class="focus-title">có một bước hành động</p><p class="focus-line">mỗi message chỉ cần một CTA: tạo ví, bật split, kích hoạt tier, kiểm tra hạn mức</p></div>
+</div>
+</section>
+<div class="footer-note">TCB Future+ 2026.</div>
+</main>
+</div>
+<script>
+const menuBtn=document.getElementById('menuBtn');
+const sidebar=document.getElementById('sidebar');
+const overlay=document.getElementById('overlay');
+function closeMenu(){sidebar.classList.remove('open');overlay.classList.remove('open')}
+menuBtn.addEventListener('click',()=>{sidebar.classList.toggle('open');overlay.classList.toggle('open')});
+overlay.addEventListener('click',closeMenu);
+document.querySelectorAll('.nav-btn').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.content').forEach(c=>c.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(btn.dataset.tab).classList.add('active');
+  closeMenu();
+  window.scrollTo({top:0,behavior:'smooth'});
+}));
+</script>
+</body>
+</html>

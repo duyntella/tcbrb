@@ -440,6 +440,106 @@ body.worldclass-ui .segment-core{
   }
 }
 
+
+
+/* =========================================================
+   TAB 11 — ECONOMICS UNIT INTERACTIVE MODEL
+   Built from FuturePlus_PnL.xlsx assumptions / Unit Economics / PnL
+   ========================================================= */
+.econ-shell{max-width:1420px;width:100%;}
+.econ-kpi-bar{position:sticky;top:calc(var(--topbar) + 12px);z-index:35;margin:0 0 18px;padding:14px;border-radius:28px;background:linear-gradient(135deg,rgba(9,11,16,.96),rgba(68,12,18,.92));border:1px solid rgba(255,255,255,.13);box-shadow:0 26px 70px rgba(50,8,13,.24);backdrop-filter:blur(18px) saturate(1.25)}
+.econ-kpi-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.econ-kpi{position:relative;overflow:hidden;border-radius:20px;padding:13px 14px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.10);min-height:88px}.econ-kpi:after{content:"";position:absolute;right:-34px;top:-44px;width:98px;height:98px;border-radius:999px;background:radial-gradient(circle,rgba(255,255,255,.16),transparent 68%)}.econ-kpi span{display:block;color:rgba(255,255,255,.62);font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:950;margin-bottom:8px}.econ-kpi b{font-family:'Sora','Be Vietnam Pro',sans-serif;font-size:clamp(18px,2.2vw,27px);line-height:1;color:#fff;letter-spacing:-.05em}.econ-kpi small{display:block;margin-top:7px;color:rgba(255,255,255,.58);font-size:11.5px;line-height:1.28}.econ-model-grid{display:grid;grid-template-columns:minmax(300px,.92fr) minmax(0,1.08fr);gap:16px;margin-bottom:18px}.econ-panel{background:linear-gradient(180deg,rgba(255,255,255,.92),rgba(255,255,255,.74));border:1px solid rgba(237,28,36,.13);border-radius:28px;padding:20px;box-shadow:0 18px 54px rgba(87,13,19,.085);backdrop-filter:blur(14px) saturate(1.16);min-width:0}.econ-panel.dark{background:linear-gradient(135deg,#08090d,#3b0b11 55%,#7f1118);color:#fff;border:1px solid rgba(255,255,255,.12)}.econ-panel-title{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:16px}.econ-panel-title h3{font-family:'Sora','Be Vietnam Pro',sans-serif;font-size:17px;line-height:1.18;margin:0;color:#111827;letter-spacing:-.035em}.econ-panel.dark .econ-panel-title h3{color:#fff}.econ-panel-title p{margin:6px 0 0;color:#667085;font-size:12.8px;line-height:1.45}.econ-panel.dark .econ-panel-title p{color:rgba(255,255,255,.66)}.econ-pill{display:inline-flex;align-items:center;width:max-content;padding:7px 10px;border-radius:999px;background:#fff1f2;border:1px solid #ffd0d5;color:#a80f19;font-size:11px;line-height:1;font-weight:900;white-space:nowrap}.econ-slider-list{display:grid;gap:12px}.econ-input-card{border-radius:18px;background:rgba(255,255,255,.78);border:1px solid rgba(237,28,36,.12);padding:13px 14px}.econ-input-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:9px}.econ-input-top label{font-weight:850;color:#1f2937;font-size:12.8px;line-height:1.3}.econ-input-value{font-family:'Sora','Be Vietnam Pro',sans-serif;color:#a80f19;font-weight:900;font-size:13px;white-space:nowrap}.econ-input-card input[type="range"]{width:100%;accent-color:#ED1C24;cursor:pointer}.econ-input-meta{display:flex;justify-content:space-between;color:#8a94a6;font-size:10.8px;margin-top:3px}.econ-two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.econ-mini-card{border-radius:20px;padding:15px;background:rgba(255,255,255,.8);border:1px solid rgba(237,28,36,.13);min-width:0}.econ-mini-card span{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#667085;font-weight:950;margin-bottom:6px}.econ-mini-card b{display:block;font-family:'Sora','Be Vietnam Pro',sans-serif;font-size:22px;letter-spacing:-.05em;color:#a80f19}.econ-mini-card p{margin:7px 0 0;color:#536171;font-size:12.5px;line-height:1.42}.econ-chart{height:260px;display:flex;align-items:flex-end;gap:16px;padding:18px;border-radius:22px;background:linear-gradient(180deg,rgba(255,247,247,.84),rgba(255,255,255,.70));border:1px solid rgba(237,28,36,.12)}.econ-bar-wrap{flex:1;display:flex;flex-direction:column;align-items:center;gap:9px;height:100%;justify-content:flex-end}.econ-bar-stack{width:100%;max-width:82px;height:180px;border-radius:18px;background:rgba(237,28,36,.08);display:flex;align-items:flex-end;overflow:hidden;border:1px solid rgba(237,28,36,.12)}.econ-bar{width:100%;border-radius:18px 18px 0 0;background:linear-gradient(180deg,#ff5962,#ED1C24 48%,#A80F19);min-height:4px;transition:height .25s ease}.econ-bar-wrap strong{font-family:'Sora','Be Vietnam Pro',sans-serif;font-size:13px;color:#111827}.econ-bar-wrap small{font-size:11px;color:#667085;text-align:center}.econ-summary-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}.econ-pnl-table td:nth-child(n+3),.econ-pnl-table th:nth-child(n+3){text-align:right}.econ-positive{color:#047857!important;font-weight:900!important}.econ-negative{color:#b5121b!important;font-weight:900!important}.econ-note{border-radius:22px;padding:15px 16px;background:linear-gradient(135deg,#fff1f2,#fff);border:1px dashed #ffc4cb;color:#4d5f72;font-size:13.2px;line-height:1.55;margin-bottom:16px}.econ-note strong{color:#a80f19}.econ-controls-sticky{position:sticky;top:calc(var(--topbar) + 132px)}
+@media(max-width:1120px){.econ-kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.econ-kpi:last-child{grid-column:span 2}.econ-model-grid{grid-template-columns:1fr}.econ-controls-sticky{position:relative;top:auto}.econ-kpi-bar{top:calc(var(--topbar) + 8px)}}
+@media(max-width:640px){.econ-kpi-bar{border-radius:22px;padding:10px;margin-bottom:12px;top:calc(var(--topbar) + 6px)}.econ-kpi-grid{grid-template-columns:1fr;gap:8px}.econ-kpi,.econ-kpi:last-child{grid-column:span 1;min-height:auto;padding:11px 12px;border-radius:16px}.econ-kpi b{font-size:21px}.econ-kpi small{font-size:10.8px}.econ-model-grid{gap:12px}.econ-panel{border-radius:22px;padding:15px}.econ-panel-title{display:block}.econ-pill{margin-top:10px}.econ-two-col,.econ-summary-grid{grid-template-columns:1fr}.econ-chart{height:220px;gap:10px;padding:12px;border-radius:18px}.econ-bar-stack{height:138px;max-width:56px}.econ-input-top label{font-size:12.5px}.econ-input-card{padding:12px;border-radius:16px}}
+
+
+/* =========================================================
+   PATCH — TAB 07 TEXT CONTRAST + TAB 11 RESTRUCTURED MODEL
+   ========================================================= */
+body.worldclass-ui #tab6 .dark-card .card-title,
+body.worldclass-ui #tab6 .dark-card .quote,
+body.worldclass-ui #tab6 .dark-card .quote.small{
+  color:#ffffff !important;
+  -webkit-text-fill-color:#ffffff !important;
+}
+body.worldclass-ui #tab6 .dark-card .card-title{
+  opacity:.9;
+}
+body.worldclass-ui #tab6 .dark-card{
+  background:linear-gradient(135deg,#08090d,#4b0b12 58%,#ED1C24) !important;
+  color:#fff !important;
+}
+
+.econ-section-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px;margin-bottom:18px}
+.econ-box{grid-column:span 6;background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(255,255,255,.76));border:1px solid rgba(237,28,36,.13);border-radius:28px;padding:20px;box-shadow:0 18px 54px rgba(87,13,19,.085);backdrop-filter:blur(14px) saturate(1.16);min-width:0}
+.econ-box.full{grid-column:span 12}.econ-box.dark{background:linear-gradient(135deg,#08090d,#3b0b11 55%,#7f1118);color:#fff;border:1px solid rgba(255,255,255,.12)}
+.econ-box-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:16px}.econ-box-head h3{font-family:'Sora','Be Vietnam Pro',sans-serif;font-size:18px;line-height:1.18;margin:0;color:#111827;letter-spacing:-.035em}.econ-box.dark .econ-box-head h3{color:#fff}.econ-box-head p{margin:7px 0 0;color:#667085;font-size:12.8px;line-height:1.45}.econ-box.dark .econ-box-head p{color:rgba(255,255,255,.68)}
+.econ-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.econ-revenue-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px}.econ-result-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:12px}
+.econ-input-card.compact{padding:12px}.econ-input-card.compact .econ-input-top{margin-bottom:7px}.econ-input-card.compact label{font-size:12px}.econ-input-card.compact .econ-input-value{font-size:12px}
+.econ-stream-card{position:relative;overflow:hidden;border-radius:20px;padding:14px;background:rgba(255,255,255,.82);border:1px solid rgba(237,28,36,.12);min-width:0}.econ-stream-card:before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:linear-gradient(90deg,#111827,#ED1C24,#FF6B72)}.econ-stream-card span{display:block;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:#667085;font-weight:950;margin-bottom:7px}.econ-stream-card b{display:block;font-family:'Sora','Be Vietnam Pro',sans-serif;color:#a80f19;font-size:18px;letter-spacing:-.045em}.econ-stream-card p{margin:7px 0 0;font-size:11.5px;line-height:1.35;color:#536171}.econ-stream-card input[type="range"]{width:100%;accent-color:#ED1C24;margin-top:8px}
+.econ-summary-card{border-radius:20px;padding:15px;background:linear-gradient(135deg,#fff1f2,#fff);border:1px solid rgba(237,28,36,.14);min-width:0}.econ-summary-card span{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#667085;font-weight:950;margin-bottom:6px}.econ-summary-card b{display:block;font-family:'Sora','Be Vietnam Pro',sans-serif;font-size:23px;letter-spacing:-.05em;color:#a80f19}.econ-summary-card p{margin:7px 0 0;color:#536171;font-size:12px;line-height:1.38}
+.econ-bridge{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin-top:12px}.econ-bridge-card{border-radius:18px;padding:13px;background:rgba(255,255,255,.84);border:1px solid rgba(237,28,36,.12);text-align:center}.econ-bridge-card span{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#667085;font-weight:950;margin-bottom:4px}.econ-bridge-card b{font-family:'Sora','Be Vietnam Pro',sans-serif;color:#111827;font-size:20px}.econ-arrow{font-weight:950;color:#a80f19}
+.econ-pnl-table td:nth-child(n+3),.econ-pnl-table th:nth-child(n+3){text-align:right}.econ-positive{color:#047857!important;font-weight:900!important}.econ-negative{color:#b5121b!important;font-weight:900!important}
+@media(max-width:1120px){.econ-section-grid{grid-template-columns:1fr}.econ-box,.econ-box.full{grid-column:span 1}.econ-revenue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.econ-result-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.econ-bridge{grid-template-columns:1fr}.econ-arrow{display:none}}
+@media(max-width:640px){.econ-box{border-radius:22px;padding:15px}.econ-box-head{display:block}.econ-form-grid,.econ-revenue-grid,.econ-result-strip{grid-template-columns:1fr}.econ-summary-card b{font-size:20px}.econ-stream-card b{font-size:17px}.econ-kpi-bar{top:calc(var(--topbar) + 6px)}}
+
+
+/* =========================================================
+   FINAL PATCH — TAB 11 MOBILE KPI + SECTION 05 DASHBOARD
+   ========================================================= */
+.econ-pnl-dashboard{display:grid;grid-template-columns:1fr;gap:16px}
+.econ-year-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.econ-year-card{position:relative;overflow:hidden;border-radius:26px;padding:18px;background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(255,247,247,.78));border:1px solid rgba(237,28,36,.14);box-shadow:0 18px 45px rgba(87,13,19,.075);min-width:0}
+.econ-year-card:before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,#111827,#ED1C24,#FF6B72)}
+.econ-year-title{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}.econ-year-title h4{font-family:'Sora','Be Vietnam Pro',sans-serif;margin:0;color:#111827;font-size:18px;letter-spacing:-.04em}.econ-year-title span{display:inline-flex;border-radius:999px;padding:6px 9px;background:#fff1f2;border:1px solid #ffd0d5;color:#a80f19;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:950;white-space:nowrap}
+.econ-year-main{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}.econ-year-main .major{grid-column:span 2;border-radius:20px;padding:15px;background:linear-gradient(135deg,#1f2937,#3b0b11 58%,#7f1118);color:#fff}.econ-year-main .major span{color:rgba(255,255,255,.66)}.econ-year-main .major b{color:#fff;font-size:30px}.econ-year-stat{border-radius:18px;padding:12px;background:rgba(255,255,255,.82);border:1px solid rgba(237,28,36,.11)}.econ-year-stat span{display:block;font-size:9.7px;letter-spacing:.11em;text-transform:uppercase;color:#667085;font-weight:950;margin-bottom:5px}.econ-year-stat b{display:block;font-family:'Sora','Be Vietnam Pro',sans-serif;font-size:18px;line-height:1;color:#a80f19;letter-spacing:-.04em}.econ-year-stat small{display:block;margin-top:5px;color:#667085;font-size:11px;line-height:1.28}
+.econ-pnl-graph-card{border-radius:28px;padding:20px;background:linear-gradient(135deg,#08090d,#3b0b11 56%,#7f1118);border:1px solid rgba(255,255,255,.12);box-shadow:0 24px 70px rgba(12,14,20,.20);color:#fff}.econ-pnl-graph-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:16px}.econ-pnl-graph-head h4{font-family:'Sora','Be Vietnam Pro',sans-serif;margin:0;font-size:18px;letter-spacing:-.04em;color:#fff}.econ-pnl-graph-head p{margin:6px 0 0;color:rgba(255,255,255,.66);font-size:12.8px;line-height:1.45}.econ-legend{display:flex;flex-wrap:wrap;gap:8px}.econ-legend span{display:inline-flex;align-items:center;gap:6px;color:rgba(255,255,255,.72);font-size:11px;font-weight:850}.econ-legend i{width:9px;height:9px;border-radius:99px;background:#ff5962}.econ-legend span:nth-child(2) i{background:#f59e0b}.econ-legend span:nth-child(3) i{background:#22c55e}
+.econ-graph-rows{display:grid;gap:13px}.econ-graph-row{display:grid;grid-template-columns:70px 1fr;gap:12px;align-items:center}.econ-graph-year{font-family:'Sora','Be Vietnam Pro',sans-serif;color:#fff;font-weight:850;font-size:13px}.econ-graph-bars{display:grid;gap:7px}.econ-graph-bar-line{display:grid;grid-template-columns:82px 1fr 78px;gap:9px;align-items:center}.econ-graph-bar-line span{color:rgba(255,255,255,.66);font-size:11px;font-weight:800}.econ-track{height:12px;border-radius:999px;background:rgba(255,255,255,.10);overflow:hidden}.econ-fill{height:100%;width:0%;border-radius:999px;background:linear-gradient(90deg,#ff5962,#ED1C24);transition:width .25s ease}.econ-fill.cost{background:linear-gradient(90deg,#fbbf24,#f59e0b)}.econ-fill.net{background:linear-gradient(90deg,#34d399,#22c55e)}.econ-fill.net.negative{background:linear-gradient(90deg,#fb7185,#dc2626)}.econ-graph-val{font-family:'Sora','Be Vietnam Pro',sans-serif;color:#fff!important;font-size:12px!important;text-align:right}
+@media(max-width:1120px){.econ-year-cards{grid-template-columns:1fr}.econ-pnl-graph-head{align-items:flex-start;flex-direction:column}.econ-graph-row{grid-template-columns:1fr}.econ-graph-bar-line{grid-template-columns:72px 1fr 64px}}
+@media(max-width:640px){
+  .econ-kpi-bar{border-radius:18px;padding:8px;margin-bottom:12px;top:calc(var(--topbar) + 6px);overflow:hidden}
+  .econ-kpi-grid{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:5px!important}
+  .econ-kpi,.econ-kpi:last-child{grid-column:auto!important;min-height:58px!important;padding:8px 6px!important;border-radius:12px!important;text-align:left}.econ-kpi:after{display:none}.econ-kpi span{font-size:7.7px!important;letter-spacing:.06em!important;line-height:1.08!important;margin-bottom:5px!important}.econ-kpi b{font-size:13.6px!important;letter-spacing:-.055em!important;line-height:1.05!important}.econ-kpi small{display:none!important}
+  .econ-box.full .econ-box-head h3{font-size:16px}.econ-pnl-dashboard{gap:12px}.econ-year-cards{gap:10px}.econ-year-card{border-radius:20px;padding:14px}.econ-year-title h4{font-size:16px}.econ-year-title span{font-size:9px;padding:5px 7px}.econ-year-main{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.econ-year-main .major{grid-column:span 2;padding:12px;border-radius:16px}.econ-year-main .major b{font-size:23px}.econ-year-stat{padding:10px;border-radius:15px}.econ-year-stat span{font-size:8.6px;letter-spacing:.08em}.econ-year-stat b{font-size:15px}.econ-year-stat small{font-size:10px}.econ-pnl-graph-card{border-radius:20px;padding:14px}.econ-pnl-graph-head{margin-bottom:12px}.econ-pnl-graph-head h4{font-size:16px}.econ-pnl-graph-head p{font-size:11.8px}.econ-legend{gap:6px}.econ-legend span{font-size:10px}.econ-graph-rows{gap:12px}.econ-graph-bar-line{grid-template-columns:62px 1fr 58px;gap:7px}.econ-graph-bar-line span{font-size:10px}.econ-track{height:10px}.econ-graph-val{font-size:10.5px!important}
+}
+
+/* =========================================================
+   FINAL TUNE — MOBILE KPI 4 BOXES + BEHAVIOR-BASED REVENUE INPUTS
+   ========================================================= */
+.econ-stream-card .stream-result{font-size:12.6px;line-height:1.45;color:#536171;margin:7px 0 0}
+.econ-stream-card .stream-formula{display:block;margin:8px 0 10px;color:#667085;font-size:11.2px;line-height:1.42}
+.econ-stream-card .stream-formula strong{color:#a80f19}
+.econ-stream-card b.stream-input{font-size:22px;color:#a80f19}
+@media(max-width:640px){
+  .econ-kpi-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:5px!important}
+  .econ-kpi-grid .econ-kpi:nth-child(5){display:none!important}
+  .econ-kpi,.econ-kpi:last-child{min-height:56px!important;padding:8px 5px!important}
+  .econ-kpi span{font-size:7.5px!important;letter-spacing:.045em!important}
+  .econ-kpi b{font-size:13.2px!important}
+  .econ-stream-card b.stream-input{font-size:18px}
+  .econ-stream-card .stream-result{font-size:12px}
+  .econ-stream-card .stream-formula{font-size:10.8px}
+}
+
+
+/* =========================================================
+   FINAL MICRO PATCH — TAB 01 NORTH STAR + BOX 05 UNITS
+   ========================================================= */
+body.worldclass-ui #tab0 .dark-card,
+body.worldclass-ui #tab0 .dark-card .card-title,
+body.worldclass-ui #tab0 .dark-card .quote,
+body.worldclass-ui #tab0 .dark-card .quote.small{
+  color:#ffffff !important;
+  -webkit-text-fill-color:#ffffff !important;
+}
+body.worldclass-ui #tab0 .dark-card .card-title{opacity:.9;}
+body.worldclass-ui #tab0 .dark-card{
+  background:linear-gradient(135deg,#08090d,#4b0b12 58%,#ED1C24) !important;
+  border:1px solid rgba(255,255,255,.12) !important;
+}
+.econ-year-stat b{white-space:normal;word-break:keep-all;}
+@media(max-width:640px){.econ-year-stat b{font-size:14px!important}.econ-year-main .major b{font-size:21px!important}}
+
 </style>
 </head>
 <body class="worldclass-ui"><div class="scroll-progress" id="scrollProgress"></div><div class="ambient-orb orb-one"></div><div class="ambient-orb orb-two"></div><div class="ambient-orb orb-three"></div><div class="topbar">
@@ -451,21 +551,21 @@ body.worldclass-ui .segment-core{
 </div>
 <div class="overlay" id="overlay"></div>
 <div class="app">
-<aside class="sidebar" id="sidebar"><div class="nav-head"><span>10 Nội dung chính</span></div><nav class="nav" id="nav"><button class="nav-btn active" data-tab="tab0"><span class="nav-num">01</span><span>Strategy</span></button><button class="nav-btn " data-tab="tab1"><span class="nav-num">02</span><span>Young Office Professional</span></button><button class="nav-btn " data-tab="tab2"><span class="nav-num">03</span><span>Young Traveller</span></button><button class="nav-btn " data-tab="tab3"><span class="nav-num">04</span><span>Emerging Investor</span></button><button class="nav-btn " data-tab="tab4"><span class="nav-num">05</span><span>Family Builder</span></button><button class="nav-btn " data-tab="tab5"><span class="nav-num">06</span><span>Young Business Owners</span></button><button class="nav-btn " data-tab="tab6"><span class="nav-num">07</span><span>Current Customers</span></button><button class="nav-btn " data-tab="tab7"><span class="nav-num">08</span><span>Đối tác trọng yếu</span></button><button class="nav-btn " data-tab="tab8"><span class="nav-num">09</span><span>Campaigns</span></button><button class="nav-btn " data-tab="tab9"><span class="nav-num">10</span><span>FOMO Creation</span></button></nav></aside>
-<main class="main"><section class="content active" id="tab0"><div class="page-head"><div class="title-wrap"><div class="big-num">01</div><div><h1>Strategy</h1><p class="section-sub">Chiến lược tổng quan</p></div></div></div><div class="hero-card"><div class="hero-kicker">Techcombank Future+</div><h2>Đúng người. Đúng lúc. Đúng tiền.</h2><p>Hai hướng song song: kéo khách mới qua tài khoản lương — và thức dậy tài sản đang ngủ của khách cũ.</p></div><div class="grid"><div class="card span-6 focus-card"><p class="card-title">mũi khoan 1</p><p class="quote small">Tier Salary Banking</p><p class="desc">Biến tài khoản lương thành phúc lợi tài chính cá nhân: smart split, saving pocket, thẻ pre-approved, tier benefit.</p></div><div class="card span-6 focus-card"><p class="card-title">mũi khoan 2</p><p class="quote small">Travel Group Wallet</p><p class="desc">Dùng travel, chia tiền nhóm và số dư sinh lời để tạo wow, referral tự nhiên và FOMO trong nhóm bạn/người thân.</p></div></div><div class="section-line"><span>5 Financial Moments trọng tâm</span></div><div class="mini-flow"><div class="flow-step"><div class="flow-kicker">01</div><div class="flow-title">Nhận lương</div><div class="flow-desc">Lương về — chia ngăn tiết kiệm - dự phòng - đầu tư tự động trước khi kịp tiêu.</div></div><div class="flow-step"><div class="flow-kicker">02</div><div class="flow-title">Đi du lịch</div><div class="flow-desc">Lập ví cho chuyến đi (Travel wallet), FX card, thêm người, chia tiền nhóm.</div></div><div class="flow-step"><div class="flow-kicker">03</div><div class="flow-title">Tiền nhàn rỗi</div><div class="flow-desc">Tiền nằm yên quá lâu là lãng phí. Một chạm để phân bổ tiền nhàn rỗi — dự phòng, sinh lời, tăng trưởng.</div></div><div class="flow-step"><div class="flow-kicker">04</div><div class="flow-title">Mua nhà / gia đình</div><div class="flow-desc">Mortgage readiness, family finance: Với thu nhập hiện tại, mua được nhà bao nhiêu? Cần trả trong bao nhiêu lâu với tiết kiệm hàng tháng hiện tại?</div></div><div class="flow-step"><div class="flow-kicker">05</div><div class="flow-title">Nhóm bạn</div><div class="flow-desc">Referral, group challenge, shared goal.</div></div></div><div class="section-line"><span>logic tăng trưởng</span></div><div class="table-wrap"><table class="overview-table"><thead><tr><th>engine</th><th>nội dung</th></tr></thead><tbody><tr><td data-label="engine">Acquire</td><td data-label="nội dung">Mục tiêu: Khách mới đúng tệp.
+<aside class="sidebar" id="sidebar"><div class="nav-head"><span>11 Nội dung chính</span></div><nav class="nav" id="nav"><button class="nav-btn active" data-tab="tab0"><span class="nav-num">01</span><span>Strategy</span></button><button class="nav-btn " data-tab="tab1"><span class="nav-num">02</span><span>Young Office Professional</span></button><button class="nav-btn " data-tab="tab2"><span class="nav-num">03</span><span>Young Traveller</span></button><button class="nav-btn " data-tab="tab3"><span class="nav-num">04</span><span>Emerging Investor</span></button><button class="nav-btn " data-tab="tab4"><span class="nav-num">05</span><span>Family Builder</span></button><button class="nav-btn " data-tab="tab5"><span class="nav-num">06</span><span>Young Business Owners</span></button><button class="nav-btn " data-tab="tab6"><span class="nav-num">07</span><span>Current Customers</span></button><button class="nav-btn " data-tab="tab7"><span class="nav-num">08</span><span>Đối tác trọng yếu</span></button><button class="nav-btn " data-tab="tab8"><span class="nav-num">09</span><span>Campaigns</span></button><button class="nav-btn " data-tab="tab9"><span class="nav-num">10</span><span>FOMO Creation</span></button><button class="nav-btn " data-tab="tab10"><span class="nav-num">11</span><span>Economics Unit</span></button></nav></aside>
+<main class="main"><section class="content active" id="tab0"><div class="page-head"><div class="title-wrap"><div class="big-num">01</div><div><h1>Strategy</h1><p class="section-sub">Chiến lược tổng quan</p></div></div></div><div class="hero-card"><div class="hero-kicker">Techcombank Future+</div><h2>Đúng người. Đúng lúc. Đúng sản phẩm.</h2><p>Hai hướng song song: kéo khách mới qua tài khoản lương — và kích hoạt tài sản đang ngủ của khách cũ.</p></div><div class="grid"><div class="card span-6 focus-card"><p class="card-title">KEY FOCUS 1</p><p class="quote small">Tier Salary Banking</p><p class="desc">Biến tài khoản lương thành phúc lợi tài chính cá nhân: smart split, saving pocket, thẻ pre-approved, tier benefit.</p></div><div class="card span-6 focus-card"><p class="card-title">KEY FOCUS 2</p><p class="quote small">Travel Group Wallet</p><p class="desc">Dùng group travel, chia tiền nhóm và số dư sinh lời để tạo wow, referral tự nhiên và FOMO trong nhóm bạn/người thân.</p></div></div><div class="section-line"><span>5 Financial Moments trọng tâm</span></div><div class="mini-flow"><div class="flow-step"><div class="flow-kicker">01</div><div class="flow-title">Nhận lương</div><div class="flow-desc">Lương về — chia ngăn tiết kiệm - dự phòng - đầu tư tự động trước khi kịp tiêu.</div></div><div class="flow-step"><div class="flow-kicker">02</div><div class="flow-title">Đi du lịch</div><div class="flow-desc">Lập ví cho chuyến đi (Travel wallet), FX card, thêm người, chia tiền nhóm.</div></div><div class="flow-step"><div class="flow-kicker">03</div><div class="flow-title">Tiền nhàn rỗi</div><div class="flow-desc">Tiền nằm yên quá lâu là lãng phí. Một chạm để phân bổ tiền nhàn rỗi — dự phòng, sinh lời, tăng trưởng.</div></div><div class="flow-step"><div class="flow-kicker">04</div><div class="flow-title">Mua nhà / gia đình</div><div class="flow-desc">Mortgage readiness, family finance: Với thu nhập hiện tại, mua được nhà bao nhiêu? Cần trả trong bao lâu với tiết kiệm hàng tháng hiện tại?</div></div><div class="flow-step"><div class="flow-kicker">05</div><div class="flow-title">Nhóm bạn</div><div class="flow-desc">Referral, group challenge, shared goal.</div></div></div><div class="section-line"><span>logic tăng trưởng</span></div><div class="table-wrap"><table class="overview-table"><thead><tr><th>engine</th><th>nội dung</th></tr></thead><tbody><tr><td data-label="engine">Acquire</td><td data-label="nội dung">Mục tiêu: Khách mới đúng tệp.
 Cách kích hoạt: tài khoản lương theo doanh nghiệp / đối tác travel &gt;&gt; onboarding tier ngay ngày đầu.
 Đo bằng: số KH mới, lương active 30 ngày, CASA.</td></tr><tr><td data-label="engine">Monetize</td><td data-label="nội dung">Mục tiêu: Khách cũ dùng nhiều hơn.
 Cách kích hoạt: Tăng ARPU bằng cách gợi ý đúng lúc theo hành vi thật.
-Đo bằng: MAUs, số sản phẩm thứ 2–3, chi tiêu thẻ, tài sản đầu tư.</td></tr></tbody></table></div><div class="grid"><div class="card span-12 dark-card"><p class="card-title">north star</p><p class="quote small">Mỗi người chỉ nhận 1–2 gợi ý mỗi lúc — đúng thời điểm, đúng nhu cầu — đủ để cảm thấy ngân hàng hiểu mình.</p></div></div></section><section class="content " id="tab1"><div class="page-head"><div class="title-wrap"><div class="big-num">02</div><div><h1>Young Office Professional</h1><p class="section-sub">25-35 tuổi | 30-70 triệu/tháng | Dân văn phòng thu nhập tốt, bắt đầu nghĩ tới tích lũy và tài sản.</p></div></div></div><div class="hero-card segment-hero compact-cvp"><div class="hero-kicker">CVP</div><p>Lương về không phải để tiêu hết. Lương về là để bắt đầu hành trình gia tăng tài sản</p></div><div class="segment-core"><div class="pain-stack"><div class="pitch-card functional"><div class="kicker">Functional Pain</div><h3>Lương tốt nhưng tiền biến mất nhanh hơn mình kịp nhớ. Không có hệ thống — không biết mình đang giữ lại được bao nhiêu.</h3></div><div class="pitch-card emotional"><div class="kicker">Emotional Pain</div><h3>Sợ kiếm được nhưng không giàu lên; muốn thấy mình trưởng thành hơn về tài chính.</h3></div></div><div class="pitch-card offerings"><div class="kicker">Offerings</div><div class="mini-tags"><span class="product-pill">Tài khoản Tier Salary</span><span class="product-pill">Tự chia lương Smart Split</span><span class="product-pill">Báo cáo lương hàng tháng</span><span class="product-pill">Thẻ tín dụng duyệt sẵn</span><span class="product-pill">Ví mục tiêu</span></div></div></div><div class="entry-moment"><div class="kicker">Entry Moment</div><h3>Payroll D0: lương vừa về — kích hoạt Smart Split ngay khi nhu cầu kiểm soát tiền mạnh nhất.</h3><p>Nhảy vào đúng khoảnh khắc nhu cầu bộc lộ mạnh nhất: tạo wow trước, sau đó kích hoạt FOMO/referral tự nhiên.</p></div><div class="section-line"><span>Hành trình kích hoạt — nhảy vào đúng moment, tạo đúng cảm xúc</span></div><div class="clean-note"><strong>Flow kích hoạt:</strong> mỗi bước giữ một thông điệp chính, một sản phẩm kích hoạt và một wow/FOMO để dễ pitch, dễ triển khai.</div><div class="flow-grid"><div class="flow-card"><div class="flow-stage">D0</div><h4>Welcome</h4><p>Chào mừng đến Tier Salary Banking — kích hoạt app, cảm giác thuộc về một tệp khách hàng xịn.
+Đo bằng: MAUs, số sản phẩm thứ 2–3, chi tiêu thẻ, tài sản đầu tư.</td></tr></tbody></table></div><div class="grid"><div class="card span-12 dark-card"><p class="card-title">north star</p><p class="quote small">Mỗi người chỉ nhận 1–2 gợi ý mỗi lúc — đúng thời điểm, đúng nhu cầu — đủ để cảm thấy ngân hàng hiểu mình.</p></div></div></section><section class="content " id="tab1"><div class="page-head"><div class="title-wrap"><div class="big-num">02</div><div><h1>Young Office Professional</h1><p class="section-sub">25-35 tuổi | 30-70 triệu/tháng | Dân văn phòng thu nhập tốt, bắt đầu nghĩ tới tích lũy và tài sản.</p></div></div></div><div class="hero-card segment-hero compact-cvp"><div class="hero-kicker">CVP</div><p>Lương về không phải để tiêu hết. Lương về là để bắt đầu hành trình gia tăng tài sản</p></div><div class="segment-core"><div class="pain-stack"><div class="pitch-card functional"><div class="kicker">Functional Pain</div><h3>Thu nhập tốt nhưng tiền tiêu nhanh hơn mình kịp nhớ. Không có hệ thống — không biết mình đang giữ lại được bao nhiêu.</h3></div><div class="pitch-card emotional"><div class="kicker">Emotional Pain</div><h3>Sợ kiếm được nhưng không giàu lên; muốn thấy mình trưởng thành hơn về tài chính.</h3></div></div><div class="pitch-card offerings"><div class="kicker">Offerings</div><div class="mini-tags"><span class="product-pill">Tài khoản Tier Salary</span><span class="product-pill">Tự chia lương Smart Split</span><span class="product-pill">Báo cáo lương hàng tháng</span><span class="product-pill">Thẻ tín dụng duyệt sẵn</span><span class="product-pill">Ví mục tiêu</span></div></div></div><div class="entry-moment"><div class="kicker">Entry Moment</div><h3>Payroll D0: lương vừa về — kích hoạt Smart Split ngay khi nhu cầu kiểm soát tiền mạnh nhất.</h3><p>Nhảy vào đúng thời điểm nhu cầu cao: tạo wow trước, sau đó kích hoạt FOMO/referral tự nhiên.</p></div><div class="section-line"><span>Hành trình kích hoạt — nhảy vào đúng thời điểm, tạo đúng cảm xúc</span></div><div class="clean-note"><strong>Flow kích hoạt:</strong> mỗi bước giữ một thông điệp chính, một sản phẩm kích hoạt và một thời điểm wow/FOMO để dễ pitch, dễ triển khai.</div><div class="flow-grid"><div class="flow-card"><div class="flow-stage">D0</div><h4>Welcome</h4><p>Chào mừng đến Tier Salary Banking — kích hoạt app, cảm giác thuộc về một tệp khách hàng xịn.
 💡 Wow: An tâm. Có chỗ để gửi tiền.</p><div class="flow-product"><span class="product-pill">Tài khoản</span></div></div><div class="flow-card"><div class="flow-stage">D1</div><h4>Smart Split</h4><p>Chia lương trong 30 giây: Chi tiêu / Tiết kiệm / Đầu tư / Du lịch.
-💡 Wow: Lần đầu thấy tiền mình đi đúng chỗ.</p><div class="flow-product"><span class="product-pill">Ví mục tiêu</span></div></div><div class="flow-card"><div class="flow-stage">D7</div><h4>Spending Pulse</h4><p>7 ngày đầu bạn đã tiêu bao nhiêu — và vào đâu. Không phán xét, chỉ hiện số.
+💡 Wow: Lần đầu thấy tiền đi đúng nơi.</p><div class="flow-product"><span class="product-pill">Ví mục tiêu</span></div></div><div class="flow-card"><div class="flow-stage">D7</div><h4>Spending Pulse</h4><p>7 ngày đầu bạn đã tiêu bao nhiêu — và vào đâu. Không góp ý, chỉ hiện số.
 💡 Insight: Mình không ngờ mình tiêu nhiều cho X đến vậy.</p><div class="flow-product"><span class="product-pill">PFM</span></div></div><div class="flow-card"><div class="flow-stage">D14</div><h4>Card Pre-approved</h4><p>Hạn mức thẻ dự kiến X triệu — mở trong 2 phút, không cần nộp hồ sơ.
-💡 Wow: Được công nhận — không phải xin, mà được mời.</p><div class="flow-product"><span class="product-pill">Thẻ tín dụng</span></div></div><div class="flow-card"><div class="flow-stage">D30</div><h4>Monthly Recap</h4><p>Tháng này bạn giữ lại 18% thu nhập. Nếu duy trì — 12 tháng sau bạn có X triệu.
+💡 Wow: Được công nhận — không phải vay, mà được mời.</p><div class="flow-product"><span class="product-pill">Thẻ tín dụng</span></div></div><div class="flow-card"><div class="flow-stage">D30</div><h4>Monthly Recap</h4><p>Tháng này bạn giữ lại 18% thu nhập. Nếu duy trì — 12 tháng sau bạn có X triệu.
 💡 WOW CHÍNH — đủ để share lên story.</p><div class="flow-product"><span class="product-pill">Tiết kiệm + PFM</span></div></div><div class="flow-card"><div class="flow-stage">D45</div><h4>Goal Suggestion</h4><p>Mua nhà, đi du lịch, hay quỹ dự phòng? Bắt đầu từ con số nhỏ — ứng với thu nhập bạn.
-💡 Lần đầu thấy tương lai không còn mờ.</p><div class="flow-product"><span class="product-pill">Saving Goal</span></div></div><div class="flow-card"><div class="flow-stage">D60</div><h4>Cash Nudge</h4><p>X triệu trong tài khoản chưa làm gì — tối ưu ngay.
+💡 Lần đầu thấy tương lai không còn mờ mịt.</p><div class="flow-product"><span class="product-pill">Saving Goal</span></div></div><div class="flow-card"><div class="flow-stage">D60</div><h4>Cash Nudge</h4><p>X triệu trong tài khoản chưa làm gì — tối ưu ngay.
 💡 FOMO: Bỏ lỡ mỗi ngày là mất tiền thật.</p><div class="flow-product"><span class="product-pill">Tiền gửi / Quỹ</span></div></div><div class="flow-card"><div class="flow-stage">D90</div><h4>Tier Upgrade</h4><p>Xong rồi. Bạn đã thiết lập xong bộ tài chính cá nhân — mở khóa quyền lợi Tier mới.
 💡 FOMO: Đồng nghiệp đã kích hoạt, mình chưa.</p><div class="flow-product"><span class="product-pill">Hạng Tier</span></div></div></div><div class="grid"><div class="card span-6 tail-card"><p class="card-title">📦 Gói giải pháp</p><div class="chip-wrap"><span class="product-pill">Tài khoản Tier Salary</span><span class="product-pill">Smart Split</span><span class="product-pill">Báo cáo lương hàng tháng</span><span class="product-pill">Thẻ tín dụng duyệt sẵn</span><span class="product-pill">Ví mục tiêu</span><span class="product-pill">Hạng Tier</span></div></div><div class="card span-6 tail-card"><p class="card-title">🤝 Đối tác trọng yếu</p><div class="chip-wrap"><span class="tag">Doanh nghiệp trả lương (B2B Payroll) - Chi nhánh / BP KHDN</span><span class="tag">HR/Total Rewards</span><span class="tag">Nền tảng HRM/Payroll SaaS</span><span class="tag">Bảo hiểm sức khỏe DN</span><span class="tag">Coworking/Business Park</span><span class="tag">KOL career / productivity / tài chính cá nhân</span></div></div><div class="card span-6 tail-card"><p class="card-title">🔥 Cơ chế FOMO</p><p class="desc">Challenge 30 ngày: Giữ lại 20% lương — cùng đồng nghiệp.
-Leaderboard theo nhóm: tiết kiệm được bao nhiêu (hoặc ẩn danh, hiển thị bạn đang xếp hạng thứ bao nhiêu trong công ty)</p></div><div class="card span-6 tail-card"><p class="card-title">📋 Chính sách</p><div class="chip-wrap"><span class="tag">Payroll fast onboarding</span><span class="tag">Pre-approved card theo payroll data</span><span class="tag">Privacy pledge dữ liệu lương</span><span class="tag">Financial wellbeing workshop miễn phí</span></div></div><div class="card span-6 tail-card"><p class="card-title">📊 KPI trọng tâm</p><div class="chip-wrap"><span class="tag">Số DN ký payroll</span><span class="tag">Số NV mở TK</span><span class="tag">Tỷ lệ nhận lương active</span><span class="tag">CASA BQ sau 3 tháng</span><span class="tag">Card penetration</span><span class="tag">Saving pocket activation</span></div></div></div></section><section class="content " id="tab2"><div class="page-head"><div class="title-wrap"><div class="big-num">03</div><div><h1>Young Traveller</h1><p class="section-sub">25-40 tuổi | 30-120 triệu/tháng | Thích du lịch, ăn uống, trải nghiệm nhóm/cặp đôi/gia đình trẻ.</p></div></div></div><div class="hero-card segment-hero compact-cvp"><div class="hero-kicker">CVP</div><p>Đi chơi vui. Về rồi tính tiền — cũng vui nốt.</p></div><div class="segment-core"><div class="pain-stack"><div class="pitch-card functional"><div class="kicker">Functional Pain</div><h3>Không biết thẻ nào lợi nhất. Sợ phí ngoại tệ ẩn. Chia tiền sau chuyến đi: không ai nhớ ai nợ bao nhiêu, phải ghi chép. Tiền trong ví thì nằm yên, không sinh lời.</h3></div><div class="pitch-card emotional"><div class="kicker">Emotional Pain</div><h3>Chỉ muốn chuyến đi vui từ đầu đến cuối — không mất mood vì tính tiền. Không bỏ lỡ deal, tỷ giá, quyền lợi.</h3></div></div><div class="pitch-card offerings"><div class="kicker">Offerings</div><div class="mini-tags"><span class="product-pill">Ví du lịch sinh lời</span><span class="product-pill">Ví nhóm chuyến đi</span><span class="product-pill">Chia tiền realtime</span><span class="product-pill">Thẻ FX thông minh</span><span class="product-pill">Travel Insurance</span></div></div></div><div class="entry-moment"><div class="kicker">Entry Moment</div><h3>T-30 đến T+7: từ khi lên kế hoạch đến một tuần sau khi về.</h3><p>Nhảy vào đúng khoảnh khắc nhu cầu bộc lộ mạnh nhất: tạo wow trước, sau đó kích hoạt FOMO/referral tự nhiên.</p></div><div class="section-line"><span>Hành trình kích hoạt — nhảy vào đúng moment, tạo đúng cảm xúc</span></div><div class="clean-note"><strong>Flow kích hoạt:</strong> mỗi bước giữ một thông điệp chính, một sản phẩm kích hoạt và một wow/FOMO để dễ pitch, dễ triển khai.</div><div class="flow-grid"><div class="flow-card"><div class="flow-stage">T-30</div><h4>Travel Pocket</h4><p>Đặt budget cho chuyến đi — tiền chưa dùng vẫn sinh lời trong lúc chờ.
+Leaderboard theo nhóm: tiết kiệm được bao nhiêu (hoặc ẩn danh, hiển thị bạn đang xếp hạng thứ bao nhiêu trong công ty)</p></div><div class="card span-6 tail-card"><p class="card-title">📋 Chính sách</p><div class="chip-wrap"><span class="tag">Payroll fast onboarding</span><span class="tag">Pre-approved card theo payroll data</span><span class="tag">Privacy pledge dữ liệu lương</span><span class="tag">Financial wellbeing workshop miễn phí</span></div></div><div class="card span-6 tail-card"><p class="card-title">📊 KPI trọng tâm</p><div class="chip-wrap"><span class="tag">Số DN ký payroll</span><span class="tag">Số NV mở TK</span><span class="tag">Tỷ lệ nhận lương active</span><span class="tag">CASA BQ sau 3 tháng</span><span class="tag">Card penetration</span><span class="tag">Saving pocket activation</span></div></div></div></section><section class="content " id="tab2"><div class="page-head"><div class="title-wrap"><div class="big-num">03</div><div><h1>Young Traveller</h1><p class="section-sub">25-40 tuổi | 30-120 triệu/tháng | Thích du lịch, ăn uống, trải nghiệm nhóm/cặp đôi/gia đình trẻ.</p></div></div></div><div class="hero-card segment-hero compact-cvp"><div class="hero-kicker">CVP</div><p>Đi chơi vui. Về rồi tính tiền — cũng vui nốt.</p></div><div class="segment-core"><div class="pain-stack"><div class="pitch-card functional"><div class="kicker">Functional Pain</div><h3>Không biết thẻ nào lợi nhất. Sợ phí ngoại tệ ẩn. Chia tiền sau chuyến đi: không ai nhớ ai nợ bao nhiêu, phải ghi chép. Tiền trong ví thì nằm yên, không sinh lời.</h3></div><div class="pitch-card emotional"><div class="kicker">Emotional Pain</div><h3>Chỉ muốn chuyến đi vui từ đầu đến cuối — không mất mood vì tính tiền. Không bỏ lỡ deal, tỷ giá, quyền lợi.</h3></div></div><div class="pitch-card offerings"><div class="kicker">Offerings</div><div class="mini-tags"><span class="product-pill">Ví du lịch sinh lời</span><span class="product-pill">Ví nhóm chuyến đi</span><span class="product-pill">Chia tiền realtime</span><span class="product-pill">Thẻ FX thông minh</span><span class="product-pill">Travel Insurance</span></div></div></div><div class="entry-moment"><div class="kicker">Entry Moment</div><h3>T-30 đến T+7: từ khi lên kế hoạch đến một tuần sau khi về.</h3><p>Nhảy vào đúng thời điểm nhu cầu cao nhất: tạo wow trước, sau đó kích hoạt FOMO/referral tự nhiên.</p></div><div class="section-line"><span>Hành trình kích hoạt — nhảy vào đúng moment, tạo đúng cảm xúc</span></div><div class="clean-note"><strong>Flow kích hoạt:</strong> mỗi bước giữ một thông điệp chính, một sản phẩm kích hoạt và một thời khắc wow/FOMO để dễ thu hút, dễ triển khai.</div><div class="flow-grid"><div class="flow-card"><div class="flow-stage">T-30</div><h4>Travel Pocket</h4><p>Đặt budget cho chuyến đi — tiền chưa dùng vẫn sinh lời trong lúc chờ.
 💡 Wow: Tiền đang đi nghỉ cùng mình.</p><div class="flow-product"><span class="product-pill">Ví du lịch sinh lời</span></div></div><div class="flow-card"><div class="flow-stage">T-14</div><h4>Group Invite</h4><p>Mời bạn bè vào Trip Wallet — cùng quản lý ngân sách chuyến đi.
 💡 FOMO: Ai chưa vào thì vẫn phải chia tiền tay sau chuyến đi.</p><div class="flow-product"><span class="product-pill">Ví nhóm chuyến đi</span></div></div><div class="flow-card"><div class="flow-stage">Khi booking</div><h4>FX Smart Card</h4><p>Đang booking vé/phòng cho [điểm đến]? Dùng thẻ này để không mất phí đổi tiền.
 💡 Không bỏ lỡ tỷ giá tốt.</p><div class="flow-product"><span class="product-pill">Thẻ FX thông minh</span></div></div><div class="flow-card"><div class="flow-stage">Trong chuyến đi</div><h4>Split Bill RT</h4><p>Giao dịch 8,4 triệu tại Tokyo — chia đều 4 người không?
@@ -524,8 +624,70 @@ Bảng xếp hạng Merchant — đang đến gần hạng tiếp theo.</p></div
 🔑 Trigger: Người kia đã tạo goal — mình cần vào để không lỡ.</p><div class="focus-chip-row"><span class="tag">Vòng lặp cặp đôi</span><span class="tag">Mục tiêu chung</span></div></div><div class="focus-card wide simple"><h3 class="focus-title accent">Idle Money Radar</h3><p class="focus-line">Phát hiện tiền nằm yên và nhắc nhở tối ưu hóa — kèm so sánh với nhóm cùng độ tuổi.
 🔑 Trigger: Người cùng độ tuổi đã tối ưu tốt hơn mình.</p><div class="focus-chip-row"><span class="tag">Benchmark đồng trang lứa</span><span class="tag">AUM</span></div></div><div class="focus-card wide simple"><h3 class="focus-title accent">Merchant Sale Countdown</h3><p class="focus-line">Nhắc shop chuẩn bị vốn trước khi mùa sale bắt đầu.
 🔑 Trigger: Không chuẩn vốn sớm = bỏ lỡ đơn hàng — đối thủ thì không bỏ lỡ.</p><div class="focus-chip-row"><span class="tag">Khẩn cấp kinh doanh</span><span class="tag">Lead tín dụng</span></div></div><div class="focus-card wide simple"><h3 class="focus-title accent">Tier Unlock</h3><p class="focus-line">Đạt đủ điều kiện thì tự động mở khóa quyền lợi mới — chủ động thông báo.
-🔑 Trigger: &#x27;Bạn đã đủ điều kiện — quyền lợi đang chờ bạn kích hoạt.&#x27;</p><div class="focus-chip-row"><span class="tag">Trạng thái</span><span class="tag">Tỷ lệ kích hoạt Tier</span></div></div></div><div class="clean-section-line"><span>nguyên tắc nội dung</span></div><div class="focus-grid"><div class="focus-card simple"><h3 class="focus-title">Gần với hành vi thật</h3><p class="focus-line">Chỉ nhắc khi có tín hiệu thật: lương về, đặt vé, số dư tăng, mùa sale, mục tiêu chung.</p></div><div class="focus-card simple"><h3 class="focus-title">Gắn với nhóm xã hội</h3><p class="focus-line">Bạn bè, đồng nghiệp, vợ/chồng, gia đình là nguồn tạo FOMO tự nhiên và bền vững nhất.</p></div><div class="focus-card simple"><h3 class="focus-title">Có một bước hành động</h3><p class="focus-line">Mỗi tin nhắn chỉ cần một CTA — đơn giản, không phân tán.</p></div></div><div class="footer-note">TCB Future+ 2026.</div></section></main>
-</div>
+🔑 Trigger: &#x27;Bạn đã đủ điều kiện — quyền lợi đang chờ bạn kích hoạt.&#x27;</p><div class="focus-chip-row"><span class="tag">Trạng thái</span><span class="tag">Tỷ lệ kích hoạt Tier</span></div></div></div><div class="clean-section-line"><span>nguyên tắc nội dung</span></div><div class="focus-grid"><div class="focus-card simple"><h3 class="focus-title">Gần với hành vi thật</h3><p class="focus-line">Chỉ nhắc khi có tín hiệu thật: lương về, đặt vé, số dư tăng, mùa sale, mục tiêu chung.</p></div><div class="focus-card simple"><h3 class="focus-title">Gắn với nhóm xã hội</h3><p class="focus-line">Bạn bè, đồng nghiệp, vợ/chồng, gia đình là nguồn tạo FOMO tự nhiên và bền vững nhất.</p></div><div class="focus-card simple"><h3 class="focus-title">Có một bước hành động</h3><p class="focus-line">Mỗi tin nhắn chỉ cần một CTA — đơn giản, không phân tán.</p></div></div><div class="footer-note">TCB Future+ 2026.</div></section>
+
+<section class="content " id="tab10"><div class="page-head"><div class="title-wrap"><div class="big-num">11</div><div><h1>Economics Unit</h1><p class="section-sub">Interactive P&amp;L model.</p></div></div></div><div class="econ-shell"><div class="hero-card"><div class="hero-kicker">Future+ Unit Economics</div><h2>Mô hình giả định Unit of Economics.</h2><p>Anh/chị kéo thả các chỉ số giả định để đánh giá chỉ số hiệu quả kinh doanh.</p></div><div class="econ-kpi-bar"><div class="econ-kpi-grid"><div class="econ-kpi"><span>End Users</span><b id="econKpiUsers">36,157</b><small>Lũy kế cuối Năm 3</small></div><div class="econ-kpi"><span>Blended CAC</span><b id="econKpiCac">0.48tr</b><small>B2B / B2C mix average</small></div><div class="econ-kpi"><span>Revenue Y3</span><b id="econKpiGrossY3">28.96 tỷ</b><small>Tổng 7 revenue streams</small></div><div class="econ-kpi"><span>Net LTV</span><b id="econKpiLtv">3.66tr</b><small>36 tháng, sau CAC</small></div><div class="econ-kpi"><span>Net P&amp;L Y3</span><b id="econKpiNetY3">14.97 tỷ</b><small>Sau operating cost và CAC</small></div></div></div><div class="econ-note"><strong>Cách đọc:</strong> Box 1 kéo thả giả định về SL Khách hàng. Box 2 tính Gross Revenue từ từng dòng doanh thu. Box 3 tính CAC để ra Net P&amp;L. Bảng 4 và 5 tổng hợp kết quả.</div>
+
+<div class="econ-section-grid">
+  <div class="econ-box full"><div class="econ-box-head"><div><h3>01. Active End Users</h3><p>Kéo thả giả định số lượng Khách hàng. Active users được tính từ số doanh nghiệp ký mới, quy mô nhân sự và tỷ lệ nhân sự tạo mới/tái kích hoạt tài khoản.</p></div><span class="econ-pill">DRIVER MODEL</span></div>
+    <div class="econ-form-grid">
+      <div class="econ-input-card"><div class="econ-input-top"><label for="dnY1">Doanh nghiệp mới ký — Năm 1</label><span class="econ-input-value" data-econ-value="dnY1"></span></div><input id="dnY1" data-econ-input="dnY1" type="range" min="5" max="80" step="1" value="22"/><div class="econ-input-meta"><span>5 DN</span><span>80 DN</span></div></div>
+      <div class="econ-input-card"><div class="econ-input-top"><label for="dnY2">Doanh nghiệp mới ký — Năm 2</label><span class="econ-input-value" data-econ-value="dnY2"></span></div><input id="dnY2" data-econ-input="dnY2" type="range" min="10" max="120" step="1" value="45"/><div class="econ-input-meta"><span>10 DN</span><span>120 DN</span></div></div>
+      <div class="econ-input-card"><div class="econ-input-top"><label for="dnY3">Doanh nghiệp mới ký — Năm 3</label><span class="econ-input-value" data-econ-value="dnY3"></span></div><input id="dnY3" data-econ-input="dnY3" type="range" min="10" max="180" step="1" value="60"/><div class="econ-input-meta"><span>10 DN</span><span>180 DN</span></div></div>
+      <div class="econ-input-card"><div class="econ-input-top"><label for="empPerDn">Nhân sự trung bình / 1 doanh nghiệp</label><span class="econ-input-value" data-econ-value="empPerDn"></span></div><input id="empPerDn" data-econ-input="empPerDn" type="range" min="100" max="1500" step="50" value="500"/><div class="econ-input-meta"><span>100</span><span>1,500</span></div></div>
+      <div class="econ-input-card"><div class="econ-input-top"><label for="activationRate">Tỷ lệ nhân sự tạo mới / reactivate tài khoản</label><span class="econ-input-value" data-econ-value="activationRate"></span></div><input id="activationRate" data-econ-input="activationRate" type="range" min="0.20" max="0.90" step="0.01" value="0.62"/><div class="econ-input-meta"><span>20%</span><span>90%</span></div></div>
+      <div class="econ-input-card"><div class="econ-input-top"><label for="retentionRate">Retention active users qua năm sau</label><span class="econ-input-value" data-econ-value="retentionRate"></span></div><input id="retentionRate" data-econ-input="retentionRate" type="range" min="0.60" max="0.95" step="0.01" value="0.88"/><div class="econ-input-meta"><span>60%</span><span>95%</span></div></div>
+    </div>
+    <div class="econ-bridge"><div class="econ-bridge-card"><span>DN mới Y3</span><b id="bridgeDnY3"></b></div><div class="econ-arrow">×</div><div class="econ-bridge-card"><span>NV/DN × activation</span><b id="bridgeActFactor"></b></div><div class="econ-arrow">=</div><div class="econ-bridge-card"><span>New active users Y3</span><b id="bridgeNewUsersY3"></b></div></div>
+  </div>
+
+  <div class="econ-box full"><div class="econ-box-head"><div><h3>02. Revenue Streams</h3><p>Kéo thả giả định số tiền / doanh thu từ user theo tháng. Hệ thống tự quy đổi thành doanh thu / user / năm rồi nhân với số lượng active users.</p></div><span class="econ-pill">GROSS REVENUE</span></div>
+    <div class="econ-revenue-grid">
+      <div class="econ-stream-card"><span>CASA &amp; Saving</span><b class="stream-input" id="streamCasaVal"></b><p class="stream-result" id="streamCasaOut"></p><small class="stream-formula" id="streamCasaFormula"></small><input data-econ-input="amtCasa" data-econ-stream="true" type="range" min="500" max="12000" step="100" value="4000"/></div>
+      <div class="econ-stream-card"><span>Chi tiêu thẻ</span><b class="stream-input" id="streamCardVal"></b><p class="stream-result" id="streamCardOut"></p><small class="stream-formula" id="streamCardFormula"></small><input data-econ-input="amtCard" data-econ-stream="true" type="range" min="500" max="15000" step="100" value="4000"/></div>
+      <div class="econ-stream-card"><span>Phí thẻ TD/năm</span><b class="stream-input" id="streamFeeVal"></b><p class="stream-result" id="streamFeeOut"></p><small class="stream-formula" id="streamFeeFormula"></small><input data-econ-input="amtFee" data-econ-stream="true" type="range" min="0" max="80" step="1" value="3"/></div>
+      <div class="econ-stream-card"><span>FX Revenue</span><b class="stream-input" id="streamFxVal"></b><p class="stream-result" id="streamFxOut"></p><small class="stream-formula" id="streamFxFormula"></small><input data-econ-input="amtFx" data-econ-stream="true" type="range" min="0" max="8000" step="100" value="1500"/></div>
+      <div class="econ-stream-card"><span>Lending NIM</span><b class="stream-input" id="streamLendingVal"></b><p class="stream-result" id="streamLendingOut"></p><small class="stream-formula" id="streamLendingFormula"></small><input data-econ-input="amtLoan" data-econ-stream="true" type="range" min="10000" max="200000" step="5000" value="80000"/></div>
+      <div class="econ-stream-card"><span>Cross-sell</span><b class="stream-input" id="streamCrossVal"></b><p class="stream-result" id="streamCrossOut"></p><small class="stream-formula" id="streamCrossFormula"></small><input data-econ-input="amtCross" data-econ-stream="true" type="range" min="0" max="2000" step="50" value="250"/></div>
+      <div class="econ-stream-card"><span>Saving Pocket</span><b class="stream-input" id="streamSavingVal"></b><p class="stream-result" id="streamSavingOut"></p><small class="stream-formula" id="streamSavingFormula"></small><input data-econ-input="amtSaving" data-econ-stream="true" type="range" min="0" max="3000" step="50" value="400"/></div>
+    </div>
+    <div class="econ-result-strip"><div class="econ-summary-card"><span>Revenue / user / year</span><b id="econRevPerUser"></b><p>Quy đổi từ 7 hành vi tiền theo tháng.</p></div><div class="econ-summary-card"><span>Gross Revenue Y1</span><b id="econGrossY1"></b><p>Áp dụng ramp-up 50% năm đầu.</p></div><div class="econ-summary-card"><span>Gross Revenue Y2</span><b id="econGrossY2"></b><p>Áp dụng ramp-up 68% năm hai.</p></div><div class="econ-summary-card"><span>Gross Revenue Y3</span><b id="econGrossY3"></b><p>Steady state theo active base.</p></div></div>
+  </div>
+
+  <div class="econ-box"><div class="econ-box-head"><div><h3>03. CAC &amp; Cost Inputs</h3><p>Phân tách CAC theo kênh và chi phí vận hành theo active user để kiểm tra độ nhạy của Net P&amp;L.</p></div><span class="econ-pill">COST</span></div>
+    <div class="econ-slider-list">
+      <div class="econ-input-card compact"><div class="econ-input-top"><label for="cacB2b">CAC B2B payroll / user mới</label><span class="econ-input-value" data-econ-value="cacB2b"></span></div><input id="cacB2b" data-econ-input="cacB2b" type="range" min="0.20" max="1.20" step="0.01" value="0.50"/></div>
+      <div class="econ-input-card compact"><div class="econ-input-top"><label for="cacB2c">CAC B2C / referral / travel / user mới</label><span class="econ-input-value" data-econ-value="cacB2c"></span></div><input id="cacB2c" data-econ-input="cacB2c" type="range" min="0.50" max="3.00" step="0.05" value="1.00"/></div>
+      <div class="econ-input-card compact"><div class="econ-input-top"><label for="b2bMix">Tỷ lệ user đến từ B2B payroll</label><span class="econ-input-value" data-econ-value="b2bMix"></span></div><input id="b2bMix" data-econ-input="b2bMix" type="range" min="0.30" max="0.95" step="0.01" value="0.70"/></div>
+      <div class="econ-input-card compact"><div class="econ-input-top"><label for="opexPerUser">Operating cost / active user / năm</label><span class="econ-input-value" data-econ-value="opexPerUser"></span></div><input id="opexPerUser" data-econ-input="opexPerUser" type="range" min="0.08" max="0.55" step="0.005" value="0.14"/></div>
+      <div class="econ-input-card compact"><div class="econ-input-top"><label for="netRev36">Net revenue 36 tháng trước CAC / user</label><span class="econ-input-value" data-econ-value="netRev36"></span></div><input id="netRev36" data-econ-input="netRev36" type="range" min="1.50" max="8.00" step="0.10" value="4.14"/></div>
+    </div>
+  </div>
+
+  <div class="econ-box dark"><div class="econ-box-head"><div><h3>04. Output Snapshot</h3><p>Kết quả thay đổi realtime khi kéo các giả định.</p></div></div>
+    <div class="econ-two-col"><div class="econ-mini-card"><span>New active users Y3</span><b id="econNewY3"></b><p>DN mới × nhân sự/DN × activation.</p></div><div class="econ-mini-card"><span>CAC blended</span><b id="econCacBlend"></b><p>Weighted average theo mix B2B/B2C.</p></div><div class="econ-mini-card"><span>Total cost Y3</span><b id="econCostY3"></b><p>Opex + acquisition cost.</p></div><div class="econ-mini-card"><span>Net Margin Y3</span><b id="econMarginY3"></b><p>Net P&amp;L / Gross Revenue.</p></div></div>
+    <div class="econ-chart" style="margin-top:14px"><div class="econ-bar-wrap"><div class="econ-bar-stack"><div class="econ-bar" id="barY1"></div></div><strong>Năm 1</strong><small id="barLabelY1"></small></div><div class="econ-bar-wrap"><div class="econ-bar-stack"><div class="econ-bar" id="barY2"></div></div><strong>Năm 2</strong><small id="barLabelY2"></small></div><div class="econ-bar-wrap"><div class="econ-bar-stack"><div class="econ-bar" id="barY3"></div></div><strong>Năm 3</strong><small id="barLabelY3"></small></div></div>
+  </div>
+
+  <div class="econ-box full"><div class="econ-box-head"><div><h3>05. 3-Year P&amp;L Dashboard</h3><p>Số liệu tự động cập nhật từ các chỉ số giả định.</p></div><span class="econ-pill">3-YEAR P&amp;L</span></div>
+    <div class="econ-pnl-dashboard">
+      <div class="econ-year-cards">
+        <div class="econ-year-card"><div class="econ-year-title"><h4>Năm 1</h4><span>Launch</span></div><div class="econ-year-main"><div class="econ-year-stat major"><span>Net P&amp;L</span><b id="pnlNetY1"></b><small>Sau operating cost và CAC</small></div><div class="econ-year-stat"><span>DN mới ký</span><b id="pnlDnY1"></b></div><div class="econ-year-stat"><span>New users</span><b id="pnlNewY1"></b></div><div class="econ-year-stat"><span>Active users</span><b id="pnlUsersY1"></b></div><div class="econ-year-stat"><span>Gross revenue</span><b id="pnlGrossY1"></b><small>tỷ VND</small></div><div class="econ-year-stat"><span>Total cost</span><b id="pnlCostY1"></b><small>tỷ VND</small></div><div class="econ-year-stat"><span>Net margin</span><b id="pnlMarginY1"></b></div></div></div>
+        <div class="econ-year-card"><div class="econ-year-title"><h4>Năm 2</h4><span>Scale</span></div><div class="econ-year-main"><div class="econ-year-stat major"><span>Net P&amp;L</span><b id="pnlNetY2"></b><small>Sau operating cost và CAC</small></div><div class="econ-year-stat"><span>DN mới ký</span><b id="pnlDnY2"></b></div><div class="econ-year-stat"><span>New users</span><b id="pnlNewY2"></b></div><div class="econ-year-stat"><span>Active users</span><b id="pnlUsersY2"></b></div><div class="econ-year-stat"><span>Gross revenue</span><b id="pnlGrossY2"></b><small>tỷ VND</small></div><div class="econ-year-stat"><span>Total cost</span><b id="pnlCostY2"></b><small>tỷ VND</small></div><div class="econ-year-stat"><span>Net margin</span><b id="pnlMarginY2"></b></div></div></div>
+        <div class="econ-year-card"><div class="econ-year-title"><h4>Năm 3</h4><span>Steady</span></div><div class="econ-year-main"><div class="econ-year-stat major"><span>Net P&amp;L</span><b id="pnlNetY3"></b><small>Sau operating cost và CAC</small></div><div class="econ-year-stat"><span>DN mới ký</span><b id="pnlDnY3"></b></div><div class="econ-year-stat"><span>New users</span><b id="pnlNewY3"></b></div><div class="econ-year-stat"><span>Active users</span><b id="pnlUsersY3"></b></div><div class="econ-year-stat"><span>Gross revenue</span><b id="pnlGrossY3"></b><small>tỷ VND</small></div><div class="econ-year-stat"><span>Total cost</span><b id="pnlCostY3"></b><small>tỷ VND</small></div><div class="econ-year-stat"><span>Net margin</span><b id="pnlMarginY3"></b></div></div></div>
+      </div>
+      <div class="econ-pnl-graph-card"><div class="econ-pnl-graph-head"><div><h4>Gross Revenue vs Total Cost vs Net P&amp;L</h4><p>So sánh điểm hòa vốn và biên lợi nhuận.</p></div><div class="econ-legend"><span><i></i>Gross</span><span><i></i>Cost</span><span><i></i>Net</span></div></div>
+        <div class="econ-graph-rows">
+          <div class="econ-graph-row"><div class="econ-graph-year">Năm 1</div><div class="econ-graph-bars"><div class="econ-graph-bar-line"><span>Gross</span><div class="econ-track"><div class="econ-fill" id="graphGrossY1"></div></div><span class="econ-graph-val" id="graphGrossLabelY1"></span></div><div class="econ-graph-bar-line"><span>Cost</span><div class="econ-track"><div class="econ-fill cost" id="graphCostY1"></div></div><span class="econ-graph-val" id="graphCostLabelY1"></span></div><div class="econ-graph-bar-line"><span>Net</span><div class="econ-track"><div class="econ-fill net" id="graphNetY1"></div></div><span class="econ-graph-val" id="graphNetLabelY1"></span></div></div></div>
+          <div class="econ-graph-row"><div class="econ-graph-year">Năm 2</div><div class="econ-graph-bars"><div class="econ-graph-bar-line"><span>Gross</span><div class="econ-track"><div class="econ-fill" id="graphGrossY2"></div></div><span class="econ-graph-val" id="graphGrossLabelY2"></span></div><div class="econ-graph-bar-line"><span>Cost</span><div class="econ-track"><div class="econ-fill cost" id="graphCostY2"></div></div><span class="econ-graph-val" id="graphCostLabelY2"></span></div><div class="econ-graph-bar-line"><span>Net</span><div class="econ-track"><div class="econ-fill net" id="graphNetY2"></div></div><span class="econ-graph-val" id="graphNetLabelY2"></span></div></div></div>
+          <div class="econ-graph-row"><div class="econ-graph-year">Năm 3</div><div class="econ-graph-bars"><div class="econ-graph-bar-line"><span>Gross</span><div class="econ-track"><div class="econ-fill" id="graphGrossY3"></div></div><span class="econ-graph-val" id="graphGrossLabelY3"></span></div><div class="econ-graph-bar-line"><span>Cost</span><div class="econ-track"><div class="econ-fill cost" id="graphCostY3"></div></div><span class="econ-graph-val" id="graphCostLabelY3"></span></div><div class="econ-graph-bar-line"><span>Net</span><div class="econ-track"><div class="econ-fill net" id="graphNetY3"></div></div><span class="econ-graph-val" id="graphNetLabelY3"></span></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div></section>
+
+
 <script>
 const buttons=[...document.querySelectorAll('.nav-btn')];
 const sections=[...document.querySelectorAll('.content')];
@@ -596,5 +758,220 @@ overlay?.addEventListener('click',()=>{sidebar.classList.remove('open'); overlay
   }
 })();
 </script>
+
+
+<script>
+(() => {
+  const inputs = [...document.querySelectorAll('[data-econ-input]')];
+  if(!inputs.length) return;
+
+  const fmtInt = n => Math.round(Number(n)||0).toLocaleString('en-US');
+  const fmt1 = n => Number(n||0).toFixed(1);
+  const fmt2 = n => Number(n||0).toFixed(2);
+  const fmt3 = n => Number(n||0).toFixed(3);
+  const fmtTr = n => `${fmt2(n)}tr`;
+  const fmtTy = n => `${fmt2(n)} tỷ`;
+  const fmtK = n => `${fmtInt(n)}k`;
+  const fmtPct = n => `${(Number(n||0)*100).toFixed(1)}%`;
+  const set = (id, value, cls) => {
+    const el = document.getElementById(id);
+    if(!el) return;
+    el.textContent = value;
+    el.classList.remove('econ-positive','econ-negative');
+    if(cls) el.classList.add(cls);
+  };
+
+  const percentKeys = new Set(['activationRate','retentionRate','b2bMix']);
+  const moneyKeys = new Set(['cacB2b','cacB2c','opexPerUser','netRev36']);
+  const kInputKeys = new Set(['amtCasa','amtCard','amtFee','amtFx','amtLoan','amtCross','amtSaving']);
+
+  function labelInput(key, value){
+    document.querySelectorAll(`[data-econ-value="${key}"]`).forEach(el => {
+      if(percentKeys.has(key)) el.textContent = fmtPct(value);
+      else if(moneyKeys.has(key)) el.textContent = fmtTr(value);
+      else if(kInputKeys.has(key)) el.textContent = fmtK(value);
+      else el.textContent = fmtInt(value);
+    });
+  }
+
+  function read(){
+    const v = {};
+    inputs.forEach(input => {
+      const key = input.dataset.econInput;
+      const val = parseFloat(input.value);
+      v[key] = val;
+      labelInput(key, val);
+    });
+    return v;
+  }
+
+  function calc(){
+    const v = read();
+
+    const newUsers1 = v.dnY1 * v.empPerDn * v.activationRate;
+    const newUsers2 = v.dnY2 * v.empPerDn * v.activationRate;
+    const newUsers3 = v.dnY3 * v.empPerDn * v.activationRate;
+
+    const active1 = newUsers1;
+    const active2 = active1 * v.retentionRate + newUsers2;
+    const active3 = active2 * v.retentionRate + newUsers3;
+
+    const revenueStreams = [
+      {
+        prefix:'streamCasa',
+        amountKey:'amtCasa',
+        name:'CASA & Saving',
+        perUser: (v.amtCasa / 1000) * 0.035,
+        formula: () => `${fmtK(v.amtCasa)}/tháng × net rev 3.5%/năm = ${fmt3((v.amtCasa/1000)*0.035)}tr/user/năm`
+      },
+      {
+        prefix:'streamCard',
+        amountKey:'amtCard',
+        name:'Card Interchange',
+        perUser: (v.amtCard / 1000) * 0.00075 * 12,
+        formula: () => `${fmtK(v.amtCard)}/tháng × Card interchange 0.075% × 12 = ${fmt3((v.amtCard/1000)*0.00075*12)}tr/user/năm`
+      },
+      {
+        prefix:'streamFee',
+        amountKey:'amtFee',
+        name:'Annual fee',
+        perUser: (v.amtFee / 1000) * 12,
+        formula: () => `${fmtK(v.amtFee)}/tháng × 12 = ${fmt3((v.amtFee/1000)*12)}tr/user/năm`
+      },
+      {
+        prefix:'streamFx',
+        amountKey:'amtFx',
+        name:'FX',
+        perUser: (v.amtFx / 1000) * 0.0015 * 12,
+        formula: () => `${fmtK(v.amtFx)}/tháng × FX margin 0.15% × 12 = ${fmt3((v.amtFx/1000)*0.0015*12)}tr/user/năm`
+      },
+      {
+        prefix:'streamLending',
+        amountKey:'amtLoan',
+        name:'Lending NIM',
+        perUser: (v.amtLoan / 1000) * 0.12 * 0.014,
+        formula: () => `${fmtK(v.amtLoan)} dư nợ × NIM 12% × nợ xấu NPL 1.4% = ${fmt3((v.amtLoan/1000)*0.12*0.014)}tr/user/năm`
+      },
+      {
+        prefix:'streamCross',
+        amountKey:'amtCross',
+        name:'Cross-sell',
+        perUser: (v.amtCross / 1000) * 12 * 0.05 * 0.50,
+        formula: () => `${fmtK(v.amtCross)}/tháng × 12 × commission 5% × phí chia sẻ đối tác 50% = ${fmt3((v.amtCross/1000)*12*0.05*0.50)}tr/user/năm`
+      },
+      {
+        prefix:'streamSaving',
+        amountKey:'amtSaving',
+        name:'Tiền gửi',
+        perUser: (v.amtSaving / 1000) * 6 * 0.025 * 0.80,
+        formula: () => `${fmtK(v.amtSaving)}/tháng × số dư BQ 6 tháng × net rev 2.5% × active 80% = ${fmt3((v.amtSaving/1000)*6*0.025*0.80)}tr/user/năm`
+      }
+    ];
+
+    const revPerUser = revenueStreams.reduce((sum, item) => sum + (item.perUser || 0), 0);
+    const ramp1 = 0.50, ramp2 = 0.68, ramp3 = 1.00;
+    const revUser1 = revPerUser * ramp1, revUser2 = revPerUser * ramp2, revUser3 = revPerUser * ramp3;
+
+    const gross1 = active1 * revUser1 / 1000;
+    const gross2 = active2 * revUser2 / 1000;
+    const gross3 = active3 * revUser3 / 1000;
+
+    revenueStreams.forEach((item) => {
+      const amount = active3 * item.perUser / 1000;
+      set(`${item.prefix}Val`, fmtK(v[item.amountKey]));
+      set(`${item.prefix}Out`, `${fmtTy(amount)} ở Năm 3 · ${fmt3(item.perUser)}tr/user/năm`);
+      set(`${item.prefix}Formula`, `Cách tính: ${item.formula()}`);
+    });
+
+    const cacBlended = v.b2bMix * v.cacB2b + (1 - v.b2bMix) * v.cacB2c;
+    const opex1 = active1 * v.opexPerUser * 1.10 / 1000;
+    const opex2 = active2 * v.opexPerUser * 1.03 / 1000;
+    const opex3 = active3 * v.opexPerUser / 1000;
+    const acq1 = newUsers1 * cacBlended / 1000;
+    const acq2 = newUsers2 * cacBlended / 1000;
+    const acq3 = newUsers3 * cacBlended / 1000;
+
+    const totalCost1 = opex1 + acq1;
+    const totalCost2 = opex2 + acq2;
+    const totalCost3 = opex3 + acq3;
+
+    const net1 = gross1 - totalCost1;
+    const net2 = gross2 - totalCost2;
+    const net3 = gross3 - totalCost3;
+
+    const margin1 = gross1 ? net1 / gross1 : 0;
+    const margin2 = gross2 ? net2 / gross2 : 0;
+    const margin3 = gross3 ? net3 / gross3 : 0;
+
+    const netLtv = v.netRev36 - cacBlended;
+
+    set('econKpiUsers', fmtInt(active3));
+    set('econKpiCac', fmtTr(cacBlended));
+    set('econKpiGrossY3', fmtTy(gross3));
+    set('econKpiLtv', fmtTr(netLtv));
+    set('econKpiNetY3', fmtTy(net3), net3 >= 0 ? 'econ-positive' : 'econ-negative');
+
+    set('bridgeDnY3', fmtInt(v.dnY3));
+    set('bridgeActFactor', `${fmtInt(v.empPerDn)} × ${fmtPct(v.activationRate)}`);
+    set('bridgeNewUsersY3', fmtInt(newUsers3));
+
+    set('econRevPerUser', fmtTr(revPerUser));
+    set('econGrossY1', fmtTy(gross1));
+    set('econGrossY2', fmtTy(gross2));
+    set('econGrossY3', fmtTy(gross3));
+    set('econNewY3', fmtInt(newUsers3));
+    set('econCacBlend', fmtTr(cacBlended));
+    set('econCostY3', fmtTy(totalCost3));
+    set('econMarginY3', fmtPct(margin3));
+
+    set('pnlDnY1', `${fmtInt(v.dnY1)} DN`); set('pnlDnY2', `${fmtInt(v.dnY2)} DN`); set('pnlDnY3', `${fmtInt(v.dnY3)} DN`);
+    set('pnlNewY1', `${fmtInt(newUsers1)} users`); set('pnlNewY2', `${fmtInt(newUsers2)} users`); set('pnlNewY3', `${fmtInt(newUsers3)} users`);
+    set('pnlUsersY1', `${fmtInt(active1)} users`); set('pnlUsersY2', `${fmtInt(active2)} users`); set('pnlUsersY3', `${fmtInt(active3)} users`);
+    set('pnlGrossY1', `${fmt2(gross1)} tỷ`); set('pnlGrossY2', `${fmt2(gross2)} tỷ`); set('pnlGrossY3', `${fmt2(gross3)} tỷ`);
+    set('pnlOpexY1', `${fmt2(opex1)} tỷ`); set('pnlOpexY2', `${fmt2(opex2)} tỷ`); set('pnlOpexY3', `${fmt2(opex3)} tỷ`);
+    set('pnlAcqY1', `${fmt2(acq1)} tỷ`); set('pnlAcqY2', `${fmt2(acq2)} tỷ`); set('pnlAcqY3', `${fmt2(acq3)} tỷ`);
+    set('pnlCostY1', `${fmt2(totalCost1)} tỷ`); set('pnlCostY2', `${fmt2(totalCost2)} tỷ`); set('pnlCostY3', `${fmt2(totalCost3)} tỷ`);
+    set('pnlNetY1', `${fmt2(net1)} tỷ`, net1 >= 0 ? 'econ-positive' : 'econ-negative');
+    set('pnlNetY2', `${fmt2(net2)} tỷ`, net2 >= 0 ? 'econ-positive' : 'econ-negative');
+    set('pnlNetY3', `${fmt2(net3)} tỷ`, net3 >= 0 ? 'econ-positive' : 'econ-negative');
+    set('pnlMarginY1', fmtPct(margin1)); set('pnlMarginY2', fmtPct(margin2)); set('pnlMarginY3', fmtPct(margin3));
+
+    const graphVals = [gross1, gross2, gross3, totalCost1, totalCost2, totalCost3, Math.abs(net1), Math.abs(net2), Math.abs(net3)];
+    const maxGraph = Math.max(...graphVals, 1);
+    [
+      ['Y1', gross1, totalCost1, net1],
+      ['Y2', gross2, totalCost2, net2],
+      ['Y3', gross3, totalCost3, net3]
+    ].forEach(([year, gross, cost, net]) => {
+      const grossEl = document.getElementById(`graphGross${year}`);
+      const costEl = document.getElementById(`graphCost${year}`);
+      const netEl = document.getElementById(`graphNet${year}`);
+      if(grossEl) grossEl.style.width = Math.max(3, Math.abs(gross) / maxGraph * 100) + '%';
+      if(costEl) costEl.style.width = Math.max(3, Math.abs(cost) / maxGraph * 100) + '%';
+      if(netEl){
+        netEl.style.width = Math.max(3, Math.abs(net) / maxGraph * 100) + '%';
+        netEl.classList.toggle('negative', net < 0);
+      }
+      set(`graphGrossLabel${year}`, `${fmt2(gross)} tỷ`);
+      set(`graphCostLabel${year}`, `${fmt2(cost)} tỷ`);
+      set(`graphNetLabel${year}`, `${fmt2(net)} tỷ`, net >= 0 ? 'econ-positive' : 'econ-negative');
+    });
+
+    const maxUsers = Math.max(active1, active2, active3, 1);
+    [['barY1', active1], ['barY2', active2], ['barY3', active3]].forEach(([id, val]) => {
+      const el = document.getElementById(id);
+      if(el) el.style.height = Math.max(5, val / maxUsers * 100) + '%';
+    });
+    set('barLabelY1', fmtInt(active1));
+    set('barLabelY2', fmtInt(active2));
+    set('barLabelY3', fmtInt(active3));
+  }
+
+  inputs.forEach(i => i.addEventListener('input', calc, {passive:true}));
+  calc();
+})();
+</script>
+
+
 </body>
 </html>
